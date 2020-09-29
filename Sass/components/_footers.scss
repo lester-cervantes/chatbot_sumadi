@@ -1,0 +1,21 @@
+
+/* Footer
+**********************/
+footer {
+	position: fixed;
+	bottom: $spacer-s;
+	width: 100%;
+	text-align: center;
+	li {
+		display: inline-block;
+		padding-right: $spacer-xss;
+		color: $blue-dark;
+	}
+	a {
+		text-decoration: underline;
+		color: $blue-dark;
+		&:hover {
+			color: $purple-normal;
+		}
+	}
+}

@@ -1,0 +1,76 @@
+
+/* Forms
+**********************/
+.form__row {
+	margin-top: $spacer-m;
+}
+
+label {
+	display: block;
+	margin-bottom: $spacer-xs;
+}
+
+input {
+	border: none;
+	min-width: 400px;
+	height: 50px;
+	font-weight: bold;
+}
+
+textarea {
+	box-sizing: border-box;
+	border: none;
+	width: 100%;
+	min-height: 350px;
+	padding: $spacer-s;
+	border-radius: $spacer-xss;
+	@include box-shadow;
+	@include font-size($text-l);
+	&.textarea--small {
+		min-height: 200px;
+	}
+}
+
+select {
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+	width: 250px;
+	font-weight: bold;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiI+DQo8cG9seWdvbiBvcGFjaXR5PSIwLjciIHBvaW50cz0iMCw0IDE2LDQgOCwxMiIvPg0KPC9zdmc+DQo=');
+  background-repeat: no-repeat;
+  background-position: calc(100% - .5em) 50%;
+	background-size: 12px;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+input[type="checkbox"] {
+	display: none;
+}
+
+input[type=checkbox] + label {
+	display: block;
+	cursor: pointer;
+}
+
+input[type=checkbox] + label:before {
+	font-family: "Font Awesome 5 Pro";
+	display: inline-block;
+	font-weight: 900;
+	content: "\f00c";
+	color: transparent;
+	vertical-align: bottom;
+	background-color: $white;
+	margin-right: $spacer-s;
+	padding-left: $spacer-xss;
+  width: $spacer-m;
+	height: $spacer-m;
+	border-radius: $spacer-xss;
+}
+
+input[type=checkbox]:checked + label:before {
+  color: $grey-dark-2;
+}

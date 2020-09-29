@@ -1,0 +1,28 @@
+
+/* Global Styles
+**********************/
+
+body {
+	line-height: 1.5;
+	font-weight: normal;
+	background-color: $grey-light-2;
+	font-family: $font-core;
+	color: $blue-normal;
+	@include font-size($text-l);
+}
+
+.row {
+	display: flex;
+}
+
+.col {
+	margin-right: $spacer-m;
+}
+
+.col:last-child {
+	margin-right: 0;
+}
+
+.rounded {
+	border-radius: 50em;
+}

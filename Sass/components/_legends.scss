@@ -1,0 +1,17 @@
+
+/* Legends and Labels
+**********************/
+.label {
+	margin-right: 20px;
+	padding: $spacer-xss;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: $font-secondary;
+	font-size: $heading-xss;
+	border: 4px solid $purple-dark;
+	border-radius: $spacer-xss;
+}
+
+.label--group {
+	display: flex;
+}

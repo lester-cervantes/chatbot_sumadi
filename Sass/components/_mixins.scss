@@ -1,0 +1,47 @@
+
+/* Mixins
+**********************/
+@function calculateRem($size) {
+	$remSize: $size / 16px;
+	@return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+	font-size: $size;
+	line-height: $size * 1.4;
+	font-size: calculateRem($size);
+}
+
+@mixin button ($bgcolor,$bgcolor-effect,$shadow-color,$text-color) {
+	width: 250px;
+	height: 50px;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-weight: bold;
+	border: none;
+	margin-top: $spacer-m;
+	font-family: $font-secondary;
+	font-size: $heading-xss;
+	border-radius: $spacer-xss;
+	color: $text-color;
+	background: $bgcolor;
+	box-shadow: 3px 3px 0 0 $shadow-color;
+	background-position: 50%;
+	background-size: 200%;
+	transition: all 0.25s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+	&:hover {
+		background-position: 100%;
+	}
+	&:active {
+		background-position: 100%;
+		box-shadow: inset 2px 2px 0 0 rgba(0,0,0,.30);
+	}	
+	&:focus {
+		outline:0;
+		background-position: 100%;
+	}
+}
+
+@mixin box-shadow {
+	box-shadow: 2px 2px 4px 0 rgba($black,.10);
+}

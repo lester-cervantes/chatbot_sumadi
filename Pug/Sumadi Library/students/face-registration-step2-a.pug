@@ -1,0 +1,21 @@
+extend ../components/layout-normal.pug
+block main-content
+	.panel.panel--medium
+		.container--face-recog
+			.container--face-recog__item
+				span.container--face-recog__label 2
+				img(src="../img/img-face-left.png" class="rounded")
+				span.container--face-recog__text Look Left
+			.container--face-recog__item.selected
+				span.container--face-recog__label 1
+				img(src="../img/img-face-front.png" class="rounded")
+				span.container--face-recog__text Look at the Screen
+			.container--face-recog__item
+				span.container--face-recog__label 3
+				img(src="../img/img-face-right.png" class="rounded")
+				span.container--face-recog__text Look Right
+		.panel.panel--small.panel--face-recog-webcam
+			img(src="../img/spin-animation.gif")
+			h4 Loading
+			button.button--white Take Photo
+		.panel.panel--medium.panel--grey.panel--footnote: span Click on the “Take Photo”button to create your record as indicated above

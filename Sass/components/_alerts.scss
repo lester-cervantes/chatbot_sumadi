@@ -1,0 +1,24 @@
+
+/* Alerts
+**********************/
+.alert--bottom {
+	position: fixed;
+	z-index: 1;
+	height: 60px;
+	width: 100%;
+	margin-left: 60px;
+	display: flex;
+	font-size: $text-m;
+	background: $gradient;
+	color: $white;
+	padding: $spacer-s;
+	a {
+		color: $white;
+		font-size: $spacer-m;
+		margin-left: $spacer-s;
+	}
+}
+
+.alert--bottom {
+	bottom: 0;
+}

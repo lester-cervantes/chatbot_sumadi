@@ -1,0 +1,60 @@
+
+/* Fonts Variables 
+**********************/
+$font-core: 'Lato', "Helvetica Neue", Arial, sans-serif;
+$font-secondary: 'Montserrat', "Helvetica Neue", Arial, sans-serif;
+
+/* Colors Variables
+**********************/
+$white: #FFFFFF;
+$black: #222D38;
+$grey-dark-1: #43596F;
+$grey-dark-2: #57738F;
+$grey-light-1: #B0BFCF;
+$grey-light-2: #E0E6ED;
+$blue-normal: #202945;
+$blue-light: #CBD2E7;
+$blue-dark: #283457;
+$green-normal: #10CFC9;
+$green-light: #E7FDFC;
+$green-dark: #097673;
+$purple-normal: #8A84D6;
+$purple-light: #C8C6EC;
+$purple-dark: #252060;
+$red-normal: #D0021B;
+$red-light: #FFD6DB;
+$yellow-normal: #F5A623;
+$yellow-light: #FFECCD;
+$gradient: linear-gradient(90deg, rgba(0,221,214,1) 0%, rgba(121,121,246,1) 100%);
+$gradient-button: linear-gradient(90deg, rgba(0,221,214,1) 30%, rgba(121,121,246,1) 70%);
+$gradient-inverse: linear-gradient(-90deg, rgba(0,221,214,1) 0%, rgba(121,121,246,1) 100%);
+$gradient-hover--purple: linear-gradient(-90deg, $green-normal 0%, $green-normal 100%);
+
+/* Headers Variables
+**********************/
+$heading-xss: 14px;
+$heading-xs: 20px;
+$heading-s: 30px;
+$heading-m: 40px;
+$heading-l: 50px;
+$heading-xl: 60px;
+
+/* Text Copy Variables
+**********************/
+$text-xxs: 8px;
+$text-xs: 12px;
+$text-s: 14px;
+$text-m: 16px;
+$text-l: 18px;
+$text-xl: 20px;
+$text-xxl: 24px;
+
+/* Spacing Variables
+**********************/
+$spacer-xss: 4px;
+$spacer-xs: 8px;
+$spacer-s: 16px;
+$spacer-m: 24px;
+$spacer-l: 32px;
+$spacer-xl: 40px;
+$spacer-xxl: 80px;

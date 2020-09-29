@@ -1,0 +1,50 @@
+
+/* Headers Global Styles
+**********************/
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: $font-secondary;
+	font-weight: 900;
+}
+
+h1 {
+	@include font-size($heading-l);
+}
+
+h2 {
+	@include font-size($heading-m);
+}
+
+h3 {
+	@include font-size($heading-s);
+}
+
+h4 {
+	@include font-size($heading-xs);
+}
+
+/* Headers Custom Styles
+**********************/
+.header--with-description {
+	span {
+		font-weight: bold;
+		text-transform: uppercase;
+		color: $green-normal;
+		font-family: $font-secondary;
+		@include font-size($text-m);
+	}
+}
+
+.header--with-image {
+	display: flex;
+	margin-bottom: $spacer-m;
+	img {
+		align-self: center;
+		width: 100px;
+		height: 100px;
+		margin-right: $spacer-s;
+	}
+}

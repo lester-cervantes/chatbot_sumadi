@@ -1,0 +1,18 @@
+extend ../components/layout-normal.pug
+block main-content
+	.container--medium
+		header.header--with-description
+			span Sumadi
+			h1 Terms and Conditions
+		form
+			.form__row
+				label Please accept the following terms and conditions in order to continue
+				textarea
+					| PLEASE READ THE FOLLOWING TERMS AND CONDITIONS CAREFULLY. IF YOU DO NOT AGREE TO ABIDE BY THE FOLLOWING TERMS AND CONDITIONS, ACCESS TO THE FLEET STREET INTERNATIONAL UNIVERSITIES CV’S WEBSITE (THE “Website”) IS NOT PERMITTED.
+					| THIS WEBSITE IS A FLEET STREET INTERNATIONAL UNIVERSITIES CV (the “CV”) WEBSITE AND HAS BEEN DEVELOPED AND MAINTAINED BY CV ON BEHALF OF ITSELF AND ITS AFFILIATES.
+					| While using this website you will have access to materials, documents, images, graphics, logos, design, audio, video and any other information (collectively, the “content”). The following terms apply both to your access to the Website as well as your access to and use of the Content.
+					| This site is intended to detect instances of academic dishonesty, fraud and/or cheating (collectively “Academic Dishonesty”) in an online classroom. CV reserves the right to issue a warning, temporarily or indefinitely suspend or terminate your use of the Website, learning management system or academic materials in the event the Website detects such instances, in its sole discretion.  
+			.form__row
+				input(type="checkbox" id="terms-check")
+				label(for="terms-check") I agree with the terms and conditions
+			button.button--normal Continue

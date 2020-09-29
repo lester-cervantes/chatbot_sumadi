@@ -1,0 +1,73 @@
+
+/* Modals
+**********************/
+.container--sumadi-modal {
+	box-sizing: border-box;
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	z-index: 99999;
+	background-color: rgba($black,.9);
+}
+
+.sumadi-modal {
+	box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 850px;
+	min-height: 400px;
+  transform: translate(-50%, -50%);
+	padding: $spacer-xl;
+	font-family: $font-core;
+  background-color: $white;
+  border-radius: $spacer-xs;
+	@include box-shadow;
+	@include font-size($text-l);
+	p {
+		margin-bottom: 20px;
+	}
+}
+
+.sumadi-modal--hero-image img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.sumadi-modal--with-ilustration {
+  background-repeat: no-repeat;
+  background-size: 350px 300px;
+	background-position: right 50px; 
+  padding: 0 350px $spacer-m $spacer-m;
+}
+
+.sumadi-modal--warning {
+  background-image: url("../img/bg-modal-warning.png");
+}
+
+.sumadi-modal--keyboard-issue {
+  background-image: url("../img/bg-modal-keyboard.png");
+}
+
+.sumadi-label--group {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	height: 40px;
+}
+
+.sumadi-label {
+	margin-right: 20px;
+	padding: $spacer-xss;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: $font-secondary;
+	font-size: $heading-xss;
+	border: 4px solid $purple-dark;
+	border-radius: $spacer-xss;
+}
+
+.sumadi-button {
+	@include button($gradient,$purple-normal,$grey-light-2,$white);
+}

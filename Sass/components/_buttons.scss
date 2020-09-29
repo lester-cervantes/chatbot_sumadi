@@ -1,0 +1,10 @@
+
+/* Buttons Global
+***********************/
+.button--normal {
+	@include button($gradient-button,$gradient-hover--purple,$grey-light-2,$white);
+}
+
+.button--white {
+	@include button($white,$green-light,transparent,$grey-dark-1);
+}

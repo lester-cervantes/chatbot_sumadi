@@ -1,0 +1,57 @@
+
+/* Main Sidebar
+**********************/
+.sidebar--main {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 120px;
+	height: 100%;
+	text-align: center;
+	padding-top: $spacer-xl;
+	background: $blue-normal;
+	ul {
+		padding: 0;
+	}
+	i {
+		display: block;
+		text-align: center;
+		font-size: $spacer-xl;
+		background: $gradient;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		margin-bottom: $spacer-xss;
+	}
+	span {
+		font-weight: bold;
+		text-transform: uppercase;
+		font-family: $font-secondary;
+		color: $white;
+		@include font-size($heading-xss);
+	}
+	&__logo img {
+		display: block;
+		margin: 0 auto;
+		max-width: 50%;
+		height: auto;
+		padding-bottom: $spacer-xl;
+	}
+	&__profile-menu {
+		position: absolute;
+		bottom: $spacer-xl;
+	}
+}
+
+.nav--main__item {
+	width: 100%;
+	border-top: 1px solid $blue-dark;
+	border-bottom: 1px solid $blue-dark;
+	padding: $spacer-s;
+	&:hover {
+		background-color: $blue-dark;
+	}
+}
+
+
+

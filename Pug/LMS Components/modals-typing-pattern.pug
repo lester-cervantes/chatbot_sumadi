@@ -1,0 +1,26 @@
+doctype html
+html
+	head
+	title Sumadi – Al-Powered Proctoring
+	meta(charset='utf-8')
+	meta(http-equiv='X-UA-Compatible', content='IE=edge')
+	meta(name='viewport', content='width=device-width, maximum-scale=1.0, user-scalable=no')
+	link(rel='stylesheet', href='css/sumadi-lms-components.css')
+	body(style="background-color: #333; margin:0;")
+		.container--sumadi-modal
+			.sumadi-modal.sumadi-modal--typing-pattern
+				.header--with-image
+					img(src="img/img-typing-pattern.png")
+					.header--with-image__content
+						h2 Typing Pattern Verification
+						p Please type the text below. Don't worry about punctuation marks, typos allowed.
+				.panel.panel--full.panel--grey.panel--typing-pattern
+					.panel--typing-pattern__instructions
+						div
+							span I would prefer fail with honor 
+							span.panel--typing-pattern__text--selected than win by cheating.
+						.label Pattern 1/2
+					form: .form__row
+						textarea.textarea--small I would prefer fail with honor 
+				.panel.panel--full.panel--grey.panel--footnote: span For security reasons this step may repeat more than once.
+				button.button--normal Send Pattern

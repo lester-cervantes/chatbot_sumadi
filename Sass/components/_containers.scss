@@ -1,0 +1,91 @@
+
+/* Global Containers
+**********************/
+.container--main {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+  align-items: center;
+  justify-content: center;
+	margin-left: 120px;
+
+	&__no-margin {
+		margin: 0px;
+	}
+}
+
+.container--large {
+	width: 100%;
+}
+
+.container--medium {
+	width: 75%;
+}
+
+.container--small {
+	width: 50%;
+}
+
+/* Containers Custom
+**********************/
+
+.container--face-recog {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 60px;
+	&__item {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		width: 100px;
+		height: 100px;
+		margin-right: $spacer-m;
+		border-radius: 50em;
+		justify-content: center;
+		align-items: center;
+		background-color: $grey-light-2;
+	}
+	&__item img {
+		width: 80%;
+		height: 80%;
+	}
+	&__label {
+		display: none;
+		position: absolute;
+		top: -15px;
+		left: 35px;
+		width: 30px;
+		height: 30px;
+		border-radius: 50em;
+		font-weight: bold;
+		text-align: center;
+		font-family: $font-core;
+		color: $blue-normal;
+		background: $gradient;
+	}
+	&__text {
+		display: none;
+		position: absolute;
+		width: 100px;
+		bottom: -45px;
+		left: 0;
+		text-align: center;
+		line-height: 20px;
+		font-size: $text-s;
+	}
+}
+
+.container--face-recog .selected {
+	text-transform: uppercase;
+	background-color: $blue-normal;
+	.container--face-recog__label {
+		display: block;
+	}
+	.container--face-recog__text {
+		display: block;
+	}
+}
+
+.container {
+	width: 90%;
+}

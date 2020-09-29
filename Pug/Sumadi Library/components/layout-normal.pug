@@ -1,0 +1,9 @@
+include sidebars.pug
+doctype html
+html
+	include head.pug
+	body
+		+main--sidebar
+		section.container--main
+			block main-content
+		include footer.pug

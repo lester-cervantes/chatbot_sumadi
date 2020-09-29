@@ -1,0 +1,104 @@
+
+/* Panels Globals
+**********************/
+.panel {
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: $spacer-l;
+	border-radius: $spacer-xss;
+	background-color: $white;
+	@include box-shadow();
+}
+
+.panel--full {
+	width: 100%;
+}
+
+.panel--large {
+	width: 90%;
+}
+
+.panel--medium {
+	width: 75%;
+	max-width: 900px;
+}
+
+.panel--small {
+	width: 50%;
+}
+
+.panel--center {
+	margin: 0 auto;
+}
+
+.panel--grey {
+	box-shadow: none;
+	background-color: $grey-light-2;
+}
+
+.panel--footnote {
+	text-align: center;
+	margin: 0 auto;
+	font-size: $text-s;
+	padding: $spacer-xs;
+}
+
+/* Panels Custom
+**********************/
+.panel--welcome-screen {
+	background-image: url("../img/bg-welcome-screen.png");
+	padding-top: 200px;
+	padding-right: 500px;
+}
+
+.panel--confirmation {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	i {
+		font-size: 100px;
+		background: $gradient;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	img {
+		border: 5px solid $grey-light-1;
+	}
+	h2 {
+		margin: $spacer-m 0;
+	}
+	h3 {
+		margin-top: $spacer-m;
+	}
+}
+
+.panel--face-recog-webcam {
+	display: flex;
+	min-height: 300px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto $spacer-m auto;
+	background: $gradient;
+	img {
+		border-radius: $spacer-xss;
+	}
+	h4 {
+		text-transform: uppercase;
+		margin: $spacer-xs 0 $spacer-m 0;
+		color: $white;
+	}
+}
+
+.panel--typing-pattern__instructions {
+	display: flex;
+	.label {
+		margin-left: auto;
+	}
+}
+
+.panel--typing-pattern__text--selected {
+	background-color: $purple-light;
+
+}
