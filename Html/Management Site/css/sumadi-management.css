@@ -4,7 +4,7 @@
 **********************/
 /* Grid - Based on Bootstrap V4
 **********************/
-@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Montserrat:700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Montserrat:100,300,400,700,900&display=swap");
 @-ms-viewport {
   width: device-width; }
 
@@ -4110,7 +4110,7 @@ label.label.label--xs {
   font-size: 8px;
   line-height: 11.2px;
   font-size: 0.5rem;
-  font-weight: 100;
+  font-weight: 600;
   text-align: center;
   padding: 0px 8px;
   color: #FFFFFF;
@@ -4380,7 +4380,8 @@ label.label.label--xs {
   -ms-flex-pack: center;
   justify-content: center;
   margin-left: 120px;
-  margin-bottom: 100px; }
+  margin-top: 40px;
+  margin-bottom: 80px; }
   .container--main__no-margin {
     margin: 0px; }
   .container--main__no-sidebar {
@@ -4480,12 +4481,29 @@ label.label.label--xs {
   flex-direction: column;
   width: 100%;
   min-width: 90%;
-  padding: 24px;
+  padding: 32px;
   height: 100%; }
 
 .spacer--s--vertical {
   padding-top: 16px;
   padding-bottom: 16px; }
+
+.title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 24px; }
+  .title-container.title-container--with-components .title {
+    margin-right: 16px;
+    font-weight: 900; }
+  .title-container.title-container--with-components button.button--normal {
+    margin: 0px;
+    height: 40px;
+    min-width: 100px;
+    width: auto; }
 
 /* Footer
 **********************/
@@ -4503,6 +4521,8 @@ footer {
     color: #283457; }
     footer a:hover {
       color: #8A84D6; }
+  footer.footer--not-fixed {
+    position: relative; }
 
 /* Forms
 **********************/
@@ -4672,6 +4692,63 @@ h4 {
     height: 100px;
     margin-right: 16px; }
 
+.title {
+  font-size: 24px;
+  line-height: 33.6px;
+  font-size: 1.5rem;
+  line-height: 1.15;
+  font-weight: 700;
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif; }
+  .title.title--xtra-small {
+    font-size: 16px;
+    line-height: 22.4px;
+    font-size: 1rem;
+    line-height: 1.15; }
+  .title.title--small {
+    font-size: 20px;
+    line-height: 28px;
+    font-size: 1.25rem;
+    line-height: 1.15; }
+  .title.title--medium {
+    font-size: 30px;
+    line-height: 42px;
+    font-size: 1.875rem;
+    line-height: 1.15; }
+  .title.title--large {
+    font-size: 40px;
+    line-height: 56px;
+    font-size: 2.5rem;
+    line-height: 1.15; }
+
+.subtitle {
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22.4px;
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 300;
+  text-transform: uppercase; }
+  .subtitle.subtitle--xtra-small {
+    font-size: 12px;
+    line-height: 16.8px;
+    font-size: 0.75rem;
+    line-height: 1; }
+  .subtitle.subtitle--small {
+    font-size: 14px;
+    line-height: 19.6px;
+    font-size: 0.875rem;
+    line-height: 1; }
+  .subtitle.subtitle--medium {
+    font-size: 20px;
+    line-height: 28px;
+    font-size: 1.25rem;
+    line-height: 1; }
+  .subtitle.subtitle--large {
+    font-size: 24px;
+    line-height: 33.6px;
+    font-size: 1.5rem;
+    line-height: 1; }
+
 /* Legends and Labels
 **********************/
 .label {
@@ -4699,69 +4776,71 @@ h4 {
   padding-left: 25px;
   margin-top: 20px; }
 
-.list .list__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin-bottom: 24px; }
-  .list .list__item .list__img {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    -webkit-box-shadow: 0px 0px 0px 3px rgba(16, 207, 201, 0.5);
-    box-shadow: 0px 0px 0px 3px rgba(16, 207, 201, 0.5);
-    margin-right: 16px; }
-  .list .list__item .list__text {
+ul.list {
+  margin-top: 24px; }
+  ul.list .list__item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-    .list .list__item .list__text * {
-      font-family: "Lato", "Helvetica Neue", Arial, sans-serif; }
-    .list .list__item .list__text .list__title {
-      font-size: 14px;
-      line-height: 19.6px;
-      font-size: 0.875rem;
-      line-height: 1;
-      font-weight: 900;
-      margin-bottom: 4px; }
-    .list .list__item .list__text .list__subtitle {
-      font-size: 12px;
-      line-height: 16.8px;
-      font-size: 0.75rem;
-      line-height: 1;
-      font-weight: 300;
-      text-transform: uppercase;
-      display: -webkit-inline-box;
-      display: -ms-inline-flexbox;
-      display: inline-flex; }
-      .list .list__item .list__text .list__subtitle strong {
-        display: -webkit-inline-box;
-        display: -ms-inline-flexbox;
-        display: inline-flex;
-        margin-right: 4px; }
-      .list .list__item .list__text .list__subtitle span {
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-bottom: 24px; }
+    ul.list .list__item .list__img {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      -webkit-box-shadow: 0px 0px 0px 3px rgba(16, 207, 201, 0.5);
+      box-shadow: 0px 0px 0px 3px rgba(16, 207, 201, 0.5);
+      margin-right: 16px; }
+    ul.list .list__item .list__text {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      ul.list .list__item .list__text * {
+        font-family: "Lato", "Helvetica Neue", Arial, sans-serif; }
+      ul.list .list__item .list__text .list__title {
+        font-size: 14px;
+        line-height: 19.6px;
+        font-size: 0.875rem;
+        line-height: 1;
+        font-weight: 900;
+        margin-bottom: 4px; }
+      ul.list .list__item .list__text .list__subtitle {
+        font-size: 12px;
+        line-height: 16.8px;
+        font-size: 0.75rem;
+        line-height: 1;
+        font-weight: 300;
+        text-transform: uppercase;
         display: -webkit-inline-box;
         display: -ms-inline-flexbox;
         display: inline-flex; }
-    .list .list__item .list__text .list__link {
-      color: #10CFC9;
-      font-size: 8px;
-      line-height: 11.2px;
-      font-size: 0.5rem;
-      line-height: 1;
-      font-weight: 400;
-      text-transform: uppercase;
-      width: 100%;
-      cursor: pointer;
-      text-decoration: underline; }
+        ul.list .list__item .list__text .list__subtitle strong {
+          display: -webkit-inline-box;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
+          margin-right: 4px; }
+        ul.list .list__item .list__text .list__subtitle span {
+          display: -webkit-inline-box;
+          display: -ms-inline-flexbox;
+          display: inline-flex; }
+      ul.list .list__item .list__text .list__link {
+        color: #10CFC9;
+        font-size: 8px;
+        line-height: 11.2px;
+        font-size: 0.5rem;
+        line-height: 1;
+        font-weight: 400;
+        text-transform: uppercase;
+        width: 100%;
+        cursor: pointer;
+        text-decoration: underline; }
 
 /* Panels Globals
 **********************/

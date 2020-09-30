@@ -10,7 +10,9 @@
 	margin-top: 20px;
 }
 
-.list {
+ul.list {
+	margin-top: $spacer-m;
+
 	.list__item {
 		display: flex;
 		flex-direction: row;

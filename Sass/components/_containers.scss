@@ -9,7 +9,8 @@
   align-items: center;
   justify-content: center;
 	margin-left: 120px;
-	margin-bottom: 100px;
+	margin-top: $spacer-xl;
+	margin-bottom: $spacer-xxl;
 
 	&__no-margin {
 		margin: 0px;
@@ -104,11 +105,31 @@
   flex-direction: column;
   width: 100%;
   min-width: 90%;
-  padding: $spacer-m;
+  padding: $spacer-l;
   height: 100%;
 }
 
 .spacer--s--vertical {
   padding-top: $spacer-s;
   padding-bottom: $spacer-s;
+}
+
+.title-container {
+	display: flex;
+	align-items: center;
+	margin-bottom: $spacer-m;
+
+	&.title-container--with-components {
+		.title {
+			margin-right: $spacer-s;
+			font-weight: 900;
+		}
+
+		button.button--normal {
+			margin: 0px;
+			height: 40px;
+			min-width: 100px;
+			width: auto;
+		}
+	}
 }

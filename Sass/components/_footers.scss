@@ -18,4 +18,8 @@ footer {
 			color: $purple-normal;
 		}
 	}
+
+	&.footer--not-fixed {
+		position: relative;
+	}
 }

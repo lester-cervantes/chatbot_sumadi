@@ -48,3 +48,54 @@ h4 {
 		margin-right: $spacer-s;
 	}
 }
+
+.title {
+	@include font-size($text-xxl);//24px
+	line-height: 1.15;
+	font-weight: 700;
+	font-family: $font-secondary;
+
+
+	&.title--xtra-small {
+		@include font-size($text-m);
+		line-height: 1.15;
+	}
+	&.title--small {
+		@include font-size($heading-xs);
+		line-height: 1.15;
+	}
+	&.title--medium {
+		@include font-size($heading-s);
+		line-height: 1.15;
+	}
+	&.title--large {
+		@include font-size($heading-m);
+		line-height: 1.15;
+	}
+}
+
+.subtitle {
+	font-family: $font-secondary;
+	@include font-size($text-m);//16px
+	line-height: 1;
+	font-weight: 300;
+	text-transform: uppercase;
+
+	&.subtitle--xtra-small {
+		@include font-size($text-xs);
+	line-height: 1;
+	}
+	&.subtitle--small {
+		@include font-size($text-s);
+	line-height: 1;
+	}
+	&.subtitle--medium {
+		@include font-size($text-xl);
+	line-height: 1;
+	}
+	&.subtitle--large {
+		@include font-size($text-xxl);
+	line-height: 1;
+	}
+	
+}
