@@ -4122,6 +4122,60 @@ label.label.label--xs {
   margin: 0px;
   border-radius: 20px; }
 
+.switch {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50px;
+  height: 28px; }
+  .switch .slider {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 34px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: -webkit-gradient(linear, left top, right top, from(#00ddd6), color-stop(25%, #7979f6), color-stop(20%, #ccc));
+    background: -webkit-linear-gradient(left, #00ddd6 0%, #7979f6 25%, #ccc 20%);
+    background: -o-linear-gradient(left, #00ddd6 0%, #7979f6 25%, #ccc 20%);
+    background: linear-gradient(90deg, #00ddd6 0%, #7979f6 25%, #ccc 20%);
+    background-position: 40%;
+    background-size: 400%;
+    -webkit-transition: all 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+    -o-transition: all 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+    transition: all 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96); }
+    .switch .slider:before {
+      position: absolute;
+      content: "";
+      height: 20px;
+      width: 20px;
+      left: 4px;
+      bottom: 4px;
+      border-radius: 50%;
+      background-color: #FFFFFF;
+      -webkit-transition: .4s;
+      -o-transition: .4s;
+      transition: .4s; }
+  .switch input[type="checkbox"] {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    min-width: 50px;
+    height: 28px;
+    z-index: 100;
+    opacity: 0; }
+    .switch input[type="checkbox"]:checked + .slider {
+      background-position: 0%; }
+    .switch input[type="checkbox"]:focus + .slider {
+      -webkit-box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.3);
+      box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.3); }
+    .switch input[type="checkbox"]:checked + .slider:before {
+      left: calc(100% - 24px); }
+
 /* Alerts
 **********************/
 .alert--bottom {
@@ -4175,7 +4229,10 @@ label.label.label--xs {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 16px; }
+    margin-bottom: 16px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
     .card .card__header img.card__img {
       width: 50px; }
   .card .card__body {

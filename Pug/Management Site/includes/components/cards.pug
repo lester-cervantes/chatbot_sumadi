@@ -10,7 +10,9 @@ mixin card(options)
 	.card&attributes(attributes)
 		.card__header
 			img(src=cardImageURL).card__img
-			.stwich
+			.switch
+				input(type="checkbox" checked="checked")
+				span.slider
 		.card__body
 			label.label.label--xs #{cardLabel}
 			.card__subtitle #{cardSubtitle}

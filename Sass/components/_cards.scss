@@ -19,6 +19,7 @@
   .card__header {
     display: flex;
     margin-bottom: $spacer-s;
+    justify-content: space-between;
     img.card__img {
       width: 50px;
     }
