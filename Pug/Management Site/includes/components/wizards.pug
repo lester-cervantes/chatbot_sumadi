@@ -1,0 +1,14 @@
+mixin wizard(options)
+	- options = options || {};
+	- var activeStep = options.activeStep || 1;
+
+	.wizard
+		case activeStep
+			when 1
+				include step01.pug
+			when 2
+				include step02.pug
+			when 3
+				include step03.pug
+			default
+				include step01.pug

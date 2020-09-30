@@ -1,0 +1,58 @@
+extend includes/layout-normal.pug
+block main-content
+	.container
+		.row
+			.col-12.section--boxed
+				.title Add New Account
+				+wizard({'activeStep': 2})
+				.wizard-content
+					.row
+						.col-12.col-lg-6
+							label.form__label
+								strong Institution Name
+							.input-container
+								input(type="text" placeholder="Laureate")
+						.col-12.col-lg-6
+							label.form__label
+								strong Institution ID - INSID
+							.input-container
+								input(type="text" placeholder="SU2020")
+
+						.col-12.col-lg-6
+							label.form__label
+								strong Google Analytics Track ID
+							.input-container
+								select
+									option 1
+								input(type="text" placeholder="123432498734")
+						.col-12.col-lg-6
+							label.form__label
+								strong AWS ReKognition Collection ID
+								span E.G. SUMADI.INSID_PROD
+							.input-container
+								input(type="text" placeholder="SUMADI.INSID_PROD")
+
+						.col-12.col-lg-6
+							label.form__label
+								strong Services LMS LTI KEY
+								span E.G. 3RCS3CTCYNXEN3PG
+							.input-container
+								.input--fake SU2020
+								input(type="text" placeholder="DIM0ROY887e@")
+
+						.col-12.col-lg-6
+							label.form__label
+								strong Services LMS LTI KEY
+								span E.G. 3RCS3CTCYNXEN3PG
+							.input-container
+								.input--fake SU2020
+								input(type="text" placeholder="DIM0ROY887e@")
+					.row
+						.col-12.col-md-6.col-lg-4.col-xl-3.card__container
+							+card()
+						.col-12.col-md-6.col-lg-4.col-xl-3.card__container
+							+card()
+						.col-12.col-md-6.col-lg-4.col-xl-3.card__container
+							+card()
+						.col-12.col-md-6.col-lg-4.col-xl-3.card__container
+							+card()

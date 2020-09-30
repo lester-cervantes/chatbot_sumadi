@@ -1,0 +1,154 @@
+
+/********************
+ 	Wizard
+ ********************/
+
+.wizard{
+	margin: 32px 0px;
+	display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 0px;
+  border-bottom: 3px solid rgba($purple-normal, 0.2);
+}
+.wizard-content{
+	padding: 0px $spacer-xl;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	.wizard__title{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		.wizard__title-text{
+			flex: 1;
+			margin-right: 24px;
+		}
+		.card-container--stats{
+			margin: 0px;
+		}
+	}
+}
+.wizard-footer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 32px;
+  position: relative;
+  min-height: 70px;
+  border-top: 1px solid $grey-light-1;
+  .btn{
+  	margin-left: 32px;
+  	min-width: 160px;
+  }
+}
+
+
+/********************
+ 	Wizard Steps
+ ********************/
+
+.step{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	min-width: 150px;
+	align-items: center;
+	flex: 1;
+	z-index: 1;
+	padding-bottom: $spacer-s;
+	border-bottom: 3px solid rgba($purple-normal, 0);
+	margin-bottom: -3px;
+	justify-content: center;
+	.step__number{
+		background-color: $grey-light-1;
+		border-radius: 50%;
+		box-shadow: 0px 0px 0px 2px $grey-light-2;
+		width: 30px;
+		height: 30px;
+		margin: 0px;
+		margin-right: $spacer-s;
+		transition: 0.25s all ease-in-out;
+		span{
+			display: block;
+			color: $white;
+			font-weight: 500;
+			@include font-size($text-xs);
+			line-height: 30px;
+			width: 100%;
+			text-align: center;
+			transition: 0.25s all ease-in-out;
+		}
+	}
+	.step__text{
+		span{
+			display: inline-block;
+			color: $grey-light-1;
+			width: 100%;
+			text-align: center;
+			font-weight: 500;
+			text-transform: uppercase;
+			@include font-size($text-s);
+			line-height: 1;
+			transition: 0.25s all ease-in-out;
+		}
+	}
+
+	&.step--visited{
+		.step__number{
+			background-color: $purple-normal;
+			box-shadow: 0px 0px 0px 2px rgba($purple-normal, 0.2);
+			span{
+				color: $white;
+			}
+		}
+		.step__text{
+			span{
+				color: $grey-dark-2;
+			}
+		}
+	}
+
+	&.step--active{
+		border-bottom: 3px solid $purple-dark;
+		.step__number{
+			background-color: $purple-dark;
+			box-shadow: 0px 0px 0px 4px rgba($purple-normal, 0.3);
+			span{
+				@include font-size($text-s);
+				line-height: 30px;
+				color: $white;
+			}
+		}
+		.step__text{
+			span{
+				color: $black;
+				font-weight: 700;
+				text-transform: uppercase;
+			}
+		}
+
+	}
+
+	&:first-child(){
+		flex-grow: 0;
+		align-items: flex-start;
+		.step__text{
+			span{
+				text-align: left;
+			}
+		}
+	}
+
+	&:last-child(){
+		flex-grow: 0;
+		align-items: flex-end;
+		.step__text{
+			span{
+				text-align: right;
+			}
+		}
+	}
+}
