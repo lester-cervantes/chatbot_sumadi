@@ -1,9 +1,11 @@
 .switch {
   position: relative;
   display: flex;
-  width: 50px;
+  width: 56px;
   height: 28px;
   .slider {
+    display: flex;
+    align-items: center;
     position: absolute;
     cursor: pointer;
     border-radius: 34px;
@@ -28,6 +30,31 @@
       transition: .4s;
     }
   }
+
+  .switch__text {
+    @include font-size($text-xs);
+    line-height: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $white;
+    width: 0px;
+    margin: 0px;
+    text-align: left;
+    padding: 0px;
+    overflow: hidden;
+    display: block;
+    transition: all 0.25s ease-in-out;
+
+    &.switch__text--on {
+      opacity: 0;
+    }
+    &.switch__text--off {
+      padding: 0px $spacer-xss;
+      text-align: right;
+      width: calc(100% - 0px);
+      opacity: 1;
+    }
+  }
   input[type="checkbox"] {
     cursor: pointer;
     display: block;
@@ -41,6 +68,16 @@
 
     &:checked + .slider {
       background-position: 0%;
+      .switch__text--off {
+        opacity: 0;
+        width: 0px;
+        padding: 0px;
+      }
+      .switch__text--on {
+        opacity: 1;
+        width: calc(100% - 24px);
+        padding: 0px $spacer-xss;
+      }
     }
 
     &:focus + .slider {
@@ -52,3 +89,4 @@
     }
   }
 }
+
