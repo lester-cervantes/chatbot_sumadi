@@ -1,8 +1,11 @@
+include components/cards.pug
+include components/lists.pug
+
 doctype html
 html
 	include head.pug
 	body
 		//+topbar()
-		section.container--main.container--main__no-margin
+		section.container--main.container--main__no-sidebar
 			block main-content
 		include components/footer.pug

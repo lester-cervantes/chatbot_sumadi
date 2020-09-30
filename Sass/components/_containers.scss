@@ -5,12 +5,18 @@
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
+	height: auto;
   align-items: center;
   justify-content: center;
 	margin-left: 120px;
+	margin-bottom: 100px;
 
 	&__no-margin {
 		margin: 0px;
+	}
+	&__no-sidebar {
+		margin-left: 0px;
+		margin-right: 0px;
 	}
 }
 
@@ -88,4 +94,21 @@
 
 .container {
 	width: 90%;
+}
+
+.section--boxed {
+	background: $white;
+  @include box-shadow;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 90%;
+  padding: $spacer-m;
+  height: 100%;
+}
+
+.spacer--s--vertical {
+  padding-top: $spacer-s;
+  padding-bottom: $spacer-s;
 }

@@ -1,0 +1,18 @@
+
+/* Labels
+**********************/
+
+label.label.label--xs {
+  background: $purple-normal;
+  border: none;
+  @include font-size($text-xxs);
+  font-weight: 100;
+  text-align: center;
+  padding: 0px $spacer-xs;
+  color: $white;
+  width: fit-content;
+  height: 20px;
+  line-height: 20px;
+  margin: 0px;
+  border-radius: 20px;
+}

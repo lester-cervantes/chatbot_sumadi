@@ -1,0 +1,35 @@
+mixin card(options)
+	- options = options || {};
+	- var cardImage = options.cardImage || 'school.svg';
+	- var cardImageURL = 'images/' + cardImage;
+	- var cardTitle = options.cardTitle || 'Universidad de Especialidades Espiritu Santo';
+	- var cardSubtitle = options.cardSubtitle || 'Institution';
+	- var cardLabel = options.cardLabel || 'Production';
+	- var cardButton = options.cardButton || 'See more';
+
+	.card&attributes(attributes)
+		.card__header
+			img(src=cardImageURL).card__img
+			.stwich
+		.card__body
+			label.label.label--xs #{cardLabel}
+			.card__subtitle #{cardSubtitle}
+			.card__title #{cardTitle}
+		.card__footer
+			button.button--normal #{cardButton}
+
+
+mixin card--featured()
+	a(href="#").card.card--featured
+		.card__body
+			i.fas.fa-plus.icon--xl
+			.card__title Add new Institution Account
+
+mixin card--stats()
+	.card.card--stats
+		.card__body
+			.card__title 12
+			label.label.label--xs Active
+		.card__footer
+			.card__subtitle America
+			.card__title Accounts
