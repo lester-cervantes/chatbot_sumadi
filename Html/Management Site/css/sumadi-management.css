@@ -4769,7 +4769,6 @@ h4 {
 /* Lists
 **********************/
 .list--normal__item {
-  background-image: url("../img/icon-list-item.png");
   background-repeat: no-repeat;
   background-position: 0 5px;
   background-size: 16px 16px;
@@ -4885,7 +4884,6 @@ ul.list {
 /* Panels Custom
 **********************/
 .panel--welcome-screen {
-  background-image: url("../img/bg-welcome-screen.png");
   padding-top: 200px;
   padding-right: 500px; }
 
