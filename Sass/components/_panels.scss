@@ -28,6 +28,12 @@
 	width: 50%;
 }
 
+.panel--xsmall {
+	width: 100%;
+	max-width: 500px;
+	padding: 60px 80px;
+}
+
 .panel--center {
 	margin: 0 auto;
 }
@@ -42,6 +48,38 @@
 	margin: 0 auto;
 	font-size: $text-s;
 	padding: $spacer-xs;
+}
+
+.panel--content {
+	margin-top: 20px;
+}
+
+.panel--footer  {
+	margin-top: 10px;
+	text-align: center;
+	.login-link {
+		color: $blue-normal;
+		text-align: right;
+		font-weight: 800;
+		text-transform: uppercase;
+		@include font-size($text-s);
+		&:hover {
+			color: $grey-dark-1;
+		}
+	}
+
+	.forgot-password {
+		text-align: right;
+	}
+	.remember-me {
+		text-align: left;
+	}
+	.resend-link {
+		margin-top: 10px;
+		display: block;
+    text-align: center;
+		text-decoration: underline;
+	}
 }
 
 /* Panels Custom

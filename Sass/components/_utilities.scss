@@ -26,3 +26,26 @@ body {
 .rounded {
 	border-radius: 50em;
 }
+
+.logo {
+	margin: auto;
+	max-width: 200px;
+	margin-bottom: 25px;
+}
+
+hr {
+	border: 1px solid $grey-light-2;
+}
+
+body.login-body {
+	background-color: $blue-normal;
+	background-image: url(../../Management%20Site/images/bg-login.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	footer li {
+		color: $white;
+	}
+	footer a {
+		color: $white;
+	}
+}

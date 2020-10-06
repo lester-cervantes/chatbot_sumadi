@@ -75,10 +75,11 @@ input[type=checkbox] + label:before {
 	vertical-align: bottom;
 	background-color: $white;
 	margin-right: $spacer-s;
-	padding-left: $spacer-xss;
+	padding-left: 2px;
   width: $spacer-m;
 	height: $spacer-m;
 	border-radius: $spacer-xss;
+	border: 1px solid $grey-light-1;
 }
 
 input[type=checkbox]:checked + label:before {
@@ -113,4 +114,10 @@ input[type=checkbox]:checked + label:before {
 	input {
 		width: 100%;
 	}
+}
+
+.warning-input {
+	text-transform: uppercase;
+	color: $grey-light-1;
+	@include font-size(12px);
 }

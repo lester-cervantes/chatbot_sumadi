@@ -1,0 +1,30 @@
+extend includes/layout-login.pug
+block main-content
+	.panel.panel--xsmall
+		a(href="../Management%20Site/login.html"): img(src="../../Html/Management%20Site/images/logo.png" class="logo")
+		hr
+		.header--with-image__content
+			h3 Welcome
+			p Please add your credentials to continue.
+		.panel--content
+			.row
+				.col-12.col-lg-12
+					label.form__label
+						strong Username
+					.input-container
+						input(type="text" placeholder="")
+				.col-12.col-lg-12
+					label.form__label
+						strong Password
+					.input-container
+						input(type="password" placeholder="")
+		.panel--footer
+			.form__row.row
+				.col-12.col-lg-6.remember-me
+					input(type="checkbox" id="remember")
+					label(for="remember") Remember me
+				.col-12.col-lg-6.forgot-password
+					a(href='../Management%20Site/forgot-password.html', class='login-link') forgot password?
+			.row
+				.col-12.col-lg-12
+					button.button--normal Log in
