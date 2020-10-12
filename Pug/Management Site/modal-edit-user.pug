@@ -1,0 +1,61 @@
+extend includes/layout-normal.pug
+block main-content
+	.container--sumadi-modal
+		.sumadi-modal
+			a: i.fas.fa-times-circle
+			.header--with-image
+				a(href="#"): img(src="../../Html/Management%20Site/images/icon-replace-avatar.png")
+				.header--with-image__content
+					h2 Edit User
+					p In order to edit this user please fill the following information.
+			.panel--content
+				.col-12.col-lg-8
+					label.form__label
+						strong Name
+					.input-container
+						input(type="text" placeholder="")
+				.col-12.col-lg-8
+					label.form__label
+						strong Email
+					.input-container
+						input(type="mail" placeholder="")
+				.col-12.col-lg-8
+					label.form__label
+						strong Password
+					.input-container
+						input(type="password" placeholder="")
+				.col-12.col-lg-8
+					label.form__label
+						strong Repeat Password
+					.input-container
+						input(type="password" placeholder="")
+				.col-12
+					.row
+						.col-12.col-lg-6
+							label.form__label
+								strong Status
+							.dropdown-white-xs
+								input#status(type='checkbox')
+								label(for='status')
+									h5 Inactive
+									i.fas.fa-chevron-down
+								ul
+									li.selected-category
+										span Inactive
+									li
+										span Active
+						.col-12.col-lg-6
+							label.form__label
+								strong Role
+							.dropdown-white-xs
+								input#role(type='checkbox')
+								label(for='role')
+									h5 Administrator
+									i.fas.fa-chevron-down
+								ul
+									li.selected-category
+										span Administrator
+									li
+										span Manager
+			.col-12.col-lg-12
+				button.button--normal Save Changes

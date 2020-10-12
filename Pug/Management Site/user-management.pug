@@ -3,56 +3,169 @@ block main-content
 	.container
 		.row
 			.col-12.section--boxed
-				.title.title--medium Add New Account
-				+wizard({'activeStep': 3})
-				.wizard-content
-					.row
-						.col-12.col-lg-6
-							label.form__label
-								strong Institution Name
-							.input-container
-								input(type="text" placeholder="Laureate")
-						.col-12.col-lg-6
-							label.form__label
-								strong Institution ID - INSID
-							.input-container
-								input(type="text" placeholder="SU2020")
+				.nav-tabs.nav-landing-tabs
+					input( class="state" type="radio" title="tab-one" name="tabs-state" id="tab-one" checked='checked')
+					input( class="state" type="radio" title="tab-two" name="tabs-state" id="tab-two")
+					input( class="state" type="radio" title="tab-three" name="tabs-state" id="tab-three")
 
-						.col-12.col-lg-6
-							label.form__label
-								strong Google Analytics Track ID
-							.input-container
-								select
-									option 1
-								input(type="text" placeholder="123432498734")
-						.col-12.col-lg-6
-							label.form__label
-								strong AWS ReKognition Collection ID
-								span E.G. SUMADI.INSID_PROD
-							.input-container
-								input(type="text" placeholder="SUMADI.INSID_PROD")
+					.tabs.flexible-tabs
+						label(for='tab-one', id='tab-one-label', class='tab') Users
+						label(for='tab-two', id='tab-two-label', class='tab') Roles
+						label(for='tab-three', id='tab-three-label', class='tab') Privileges
 
-						.col-12.col-lg-6
-							label.form__label
-								strong Services LMS LTI KEY
-								span E.G. 3RCS3CTCYNXEN3PG
-							.input-container
-								.input--fake SU2020
-								input(type="text" placeholder="DIM0ROY887e@")
-
-						.col-12.col-lg-6
-							label.form__label
-								strong Services LMS LTI KEY
-								span E.G. 3RCS3CTCYNXEN3PG
-							.input-container
-								.input--fake SU2020
-								input(type="text" placeholder="DIM0ROY887e@")
-					.row
-						.col-12.col-md-6.col-lg-4.col-xl-3.card__container
-							+card()
-						.col-12.col-md-6.col-lg-4.col-xl-3.card__container
-							+card()
-						.col-12.col-md-6.col-lg-4.col-xl-3.card__container
-							+card()
-						.col-12.col-md-6.col-lg-4.col-xl-3.card__container
-							+card()
+						#tab-one-panel.panel--box
+							.col-12
+								.row.panel--box-header
+									.col-6
+										.title.title--medium User Management
+									.col-6
+										button.button--normal.float-right Add New User
+							.col-12
+								span Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							.col-12.table
+								.row.table--header
+									.col-12.col-md-2
+										span Name
+									.col-12.col-md-2
+										span Email
+									.col-12.col-md-2
+										span Last Activity
+									.col-12.col-md-2
+										span Status
+									.col-12.col-md-2
+										span Role
+									.col-12.col-md-2
+										span Actions
+										
+								.row.table--content
+									.col-12.col-md-2
+										.avatar.avatar--table
+											img(src="images/users/user01.png").avatar--small
+											.avatar--name
+												span Clyde Dixon
+									.col-12.col-md-2
+										.table--colum
+											span clyde.dixon@email.com
+									.col-12.col-md-2
+										.table--colum
+											span August 31,2020.
+									.col-12.col-md-2
+										.table--colum
+											span Active
+									.col-12.col-md-2
+										.table--colum
+											span Administrator
+									.col-12.col-md-2
+										.table--colum
+											ul
+												li
+													a(href='#'): .button--circle
+														i.fas.fa-pen
+												li
+													a(href='#'): .button--circle
+														i.fas.fa-trash
+										
+								.row.table--content
+									.col-12.col-md-2
+										.avatar.avatar--table
+											img(src="images/users/user01.png").avatar--small
+											.avatar--name
+												span Clyde Dixon
+									.col-12.col-md-2
+										.table--colum
+											span clyde.dixon@email.com
+									.col-12.col-md-2
+										.table--colum
+											span August 31,2020.
+									.col-12.col-md-2
+										.dropdown-white-xs
+											input#status(type='checkbox')
+											label(for='status')
+												h5 Inactive
+												i.fas.fa-chevron-down
+											ul
+												li.selected-category
+													span Inactive
+												li
+													span Active
+									.col-12.col-md-2
+										.dropdown-white-xs
+											input#role(type='checkbox')
+											label(for='role')
+												h5 Administrator
+												i.fas.fa-chevron-down
+											ul
+												li.selected-category
+													span Administrator
+												li
+													span User
+									.col-12.col-md-2
+										.table--colum
+											ul
+												li
+													a(href='#'): .button--circle
+														i.fas.fa-pen
+												li
+													a(href='#'): .button--circle
+														i.fas.fa-trash
+						#tab-two-panel.panel--box
+							.col-12
+								.row.panel--box-header
+									.col-6
+										.title.title--medium Roles Management
+									.col-6
+										button.button--normal.float-right Add New Role
+							.col-12
+								span Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							.col-12.table
+								.row.table--header
+									.col-12.col-md-3
+										span Role
+									.col-12.col-md-2
+										span Privileges
+									.col-12.col-md-5
+										span Summary
+									.col-12.col-md-2
+										span Actions
+										
+								.row.table--content
+									.col-12.col-md-3
+										.table--colum
+											span Administrator
+									.col-12.col-md-2
+										.table--colum
+											span Administrator
+									.col-12.col-md-5
+										.table--colum
+											span Lorem ipsum dolor sit amet, consectetur adipiscing elit
+									.col-12.col-md-2
+										.table--colum
+											ul
+												li
+													a(href='#'): .button--circle
+														i.fas.fa-pen
+												li
+													a(href='#'): .button--circle
+														i.fas.fa-trash
+										
+								.row.table--content
+									.col-12.col-md-3
+										.table--colum
+											span Administrator
+									.col-12.col-md-2
+										.table--colum
+											span Administrator
+									.col-12.col-md-5
+										.table--colum
+											span Lorem ipsum dolor sit amet, consectetur adipiscing elit
+									.col-12.col-md-2
+										.table--colum
+											ul
+												li
+													a(href='#'): .button--circle
+														i.fas.fa-pen
+												li
+													a(href='#'): .button--circle
+														i.fas.fa-trash
+						#tab-three-panel.panel--box
+							span 3

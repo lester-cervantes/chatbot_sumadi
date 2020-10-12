@@ -1,0 +1,23 @@
+.avatar img {
+	border-radius: 50%;
+	box-shadow: 0px 0px 0px 3px rgba($green-normal, 0.5);
+}
+
+.avatar--small {
+	width: 40px;
+	height: 40px;
+	margin-right: $spacer-s;
+}
+
+.avatar--name {
+	display: flex;
+	flex-direction: column;
+}
+
+.avatar--table {
+	display: flex;
+	flex-direction: row;
+	.avatar--name {
+		margin-top: 8px;
+	}
+}

@@ -1,0 +1,27 @@
+.container.header.header--main
+	.col-12
+		.row
+			.col-2
+				a.header--main__logo
+					img(src="../../Html/Management%20Site/images/logo.png" class="logo")
+			.col-8
+				nav.nav--main
+					ul
+						li: a.nav--main__item--selected Dashboard
+						li: a User
+						li: a Accounts
+						li: a Digital Contract
+						li: a Reports
+						li: a Portada
+			.col-2
+				nav.nav--secondary
+					.dropdown-white-xs.dropdown--transparent
+						input#status(type='checkbox')
+						label(for='status')
+							h5 Daniela Andino
+							i.fas.fa-chevron-down
+						ul
+							li.selected-category
+								span My Account
+							li
+								span Log out

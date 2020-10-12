@@ -1,0 +1,152 @@
+/* Tabs
+**********************/
+/*  Tabs
+**********************/
+.nav-landing-tabs {
+  width: 100%;
+  margin: 70px 0;
+  border: 0; }
+
+.state {
+  position: absolute;
+  left: -10000px; }
+
+.flexible-tabs {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .flexible-tabs .tab {
+    /*width: 25%;*/
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid #E7E7E7;
+    font-size: 13px; }
+  .flexible-tabs .panel {
+    padding: 60px 0px;
+    display: none;
+    width: 100%;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+    .flexible-tabs .panel span {
+      color: gray;
+      font-weight: normal;
+      font-size: 14px; }
+  .flexible-tabs label {
+    text-transform: capitalize;
+    color: #BABABA;
+    font-size: 13px; }
+
+.tab {
+  display: inline-block;
+  padding: 10px;
+  vertical-align: top;
+  cursor: hand;
+  cursor: pointer; }
+
+#tab-one:checked ~ .tabs #tab-one-label,
+#tab-two:checked ~ .tabs #tab-two-label,
+#tab-three:checked ~ .tabs #tab-three-label,
+#tab-four:checked ~ .tabs #tab-four-label {
+  cursor: default;
+  border-bottom: 5px solid red;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #333;
+  font-size: 13px;
+  position: relative; }
+  #tab-one:checked ~ .tabs #tab-one-label:after,
+  #tab-two:checked ~ .tabs #tab-two-label:after,
+  #tab-three:checked ~ .tabs #tab-three-label:after,
+  #tab-four:checked ~ .tabs #tab-four-label:after {
+    width: 0;
+    height: 0;
+    top: 40px;
+    left: 40%;
+    border-top: 6px solid red;
+    content: " ";
+    position: absolute; }
+
+#tab-one:checked ~ .tabs #tab-one-panel,
+#tab-two:checked ~ .tabs #tab-two-panel,
+#tab-three:checked ~ .tabs #tab-three-panel,
+#tab-four:checked ~ .tabs #tab-four-panel {
+  display: block; }
+
+@media (max-width: 600px) {
+  .flexible-tabs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .flexible-tabs .tab {
+      position: relative;
+      text-align: left; }
+      .flexible-tabs .tab:after {
+        font-family: 'lynxlabs';
+        content: "+";
+        position: absolute;
+        right: 0; }
+    .flexible-tabs #tab-one-label {
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1; }
+    .flexible-tabs #tab-two-label {
+      -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+      order: 3; }
+    .flexible-tabs #tab-three-label {
+      -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+      order: 5; }
+    .flexible-tabs #tab-four-label {
+      -webkit-box-ordinal-group: 8;
+      -ms-flex-order: 7;
+      order: 7; }
+    .flexible-tabs #tab-one-panel {
+      -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+      order: 2; }
+    .flexible-tabs #tab-two-panel {
+      -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+      order: 4; }
+    .flexible-tabs #tab-three-panel {
+      -webkit-box-ordinal-group: 7;
+      -ms-flex-order: 6;
+      order: 6; }
+    .flexible-tabs #tab-four-panel {
+      -webkit-box-ordinal-group: 9;
+      -ms-flex-order: 8;
+      order: 8; }
+  #tab-one:checked ~ .tabs #tab-one-label,
+  #tab-two:checked ~ .tabs #tab-two-label,
+  #tab-three:checked ~ .tabs #tab-three-label,
+  #tab-four:checked ~ .tabs #tab-four-label {
+    border-bottom: 3px solid purple; }
+    #tab-one:checked ~ .tabs #tab-one-label:after,
+    #tab-two:checked ~ .tabs #tab-two-label:after,
+    #tab-three:checked ~ .tabs #tab-three-label:after,
+    #tab-four:checked ~ .tabs #tab-four-label:after {
+      content: '';
+      width: 12px;
+      height: 2px;
+      position: absolute;
+      top: 16px;
+      left: auto;
+      right: 2px;
+      background-color: green;
+      border: 0; }
+  #tab-one:checked ~ .tabs #tab-one-panel,
+  #tab-two:checked ~ .tabs #tab-two-panel,
+  #tab-three:checked ~ .tabs #tab-three-panel,
+  #tab-four:checked ~ .tabs #tab-four-panel {
+    border-bottom: 0; } }

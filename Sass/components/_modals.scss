@@ -15,13 +15,14 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 850px;
+  width: 650px;
 	min-height: 400px;
   transform: translate(-50%, -50%);
 	padding: $spacer-xl;
 	font-family: $font-core;
   background-color: $white;
   border-radius: $spacer-xs;
+	background-color: $white;
 	@include box-shadow;
 	@include font-size($text-l);
 	p {
@@ -70,4 +71,14 @@
 
 .sumadi-button {
 	@include button($gradient,$purple-normal,$grey-light-2,$white);
+}
+
+.sumadi-modal .header--with-image img {
+	width: auto;
+	max-width: 100px;
+	height: auto;
+}
+
+.sumadi-modal a i.fas.fa-times-circle {
+	float: right;
 }
