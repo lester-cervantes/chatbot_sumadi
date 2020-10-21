@@ -473,6 +473,15 @@ input[type=checkbox] + label:before {
     min-width: 100px;
     width: auto; }
 
+.error-body {
+  text-align: center; }
+  .error-body h1 {
+    font-size: 180px;
+    line-height: 252px;
+    font-size: 11.25rem; }
+  .error-body .panel--medium {
+    margin-top: 5%; }
+
 /* Footer
 **********************/
 footer {

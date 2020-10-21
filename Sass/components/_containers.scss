@@ -132,3 +132,13 @@
 		}
 	}
 }
+
+.error-body {
+	text-align: center;
+	h1 {
+		@include font-size(180px);
+	}
+	.panel--medium {
+		margin-top: 5%;
+	}
+}
