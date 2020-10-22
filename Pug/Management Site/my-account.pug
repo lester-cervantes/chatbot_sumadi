@@ -1,0 +1,36 @@
+extend includes/layout-normal.pug
+block main-content
+	.container
+		.row
+			.col-12.section--boxed
+				.row
+					.col-12.title-container.title-container--with-components
+						.title My Account
+					.col-12
+						.header--with-image
+							a(href="#"): img(src="../../Html/Management%20Site/images/icon-replace-avatar.png")
+							.header--with-image__content
+								h2 Daniela M. Andino
+								p daniela.andino@laureate.net
+								p Administrator
+						hr
+					.col-12.title-container.title-container--with-components
+						.title Reset Password
+					.col-lg-12
+						.col-12.col-lg-6
+							label.form__label
+								strong Old Password
+							.input-container
+								input(type="password" placeholder="")
+						.col-12.col-lg-6
+							label.form__label
+								strong New Password
+							.input-container
+								input(type="password" placeholder="")
+						.col-12.col-lg-6
+							label.form__label
+								strong Confirm New Password
+							.input-container
+								input(type="password" placeholder="")
+						.col-12.col-lg-6
+							button.button--normal Save Changes
