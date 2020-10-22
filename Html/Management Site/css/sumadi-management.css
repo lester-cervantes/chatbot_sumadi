@@ -4120,6 +4120,12 @@ body.login-body {
     outline: 0;
     background-position: 100%; }
 
+.button--xs {
+  width: 180px;
+  height: 35px;
+  margin-top: 0;
+  margin-bottom: 15px; }
+
 .button--circle {
   height: 40px;
   width: 40px;
@@ -4803,6 +4809,11 @@ label.label.label--xs {
 
 .login-body footer {
   position: fixed !important; }
+
+/* Contract Container
+**********************/
+.contract--container {
+  margin-top: 20px; }
 
 /* Footer
 **********************/

@@ -9,6 +9,13 @@
 	@include button($white,$green-light,transparent,$grey-dark-1);
 }
 
+.button--xs {
+	width: 180px;
+	height: 35px;
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
 .button--circle {
 	height: 40px;
 	width: 40px;

@@ -1,0 +1,36 @@
+extend includes/layout-normal.pug
+block main-content
+	.container
+		.row
+			.col-12.section--boxed
+				.row
+				.col-12
+					.row.panel--box-header
+						.col-12.col-md-12
+							.title.title--medium New T&C
+				.col-12
+					span In order to enable any account, a signing authority must Agree to Sumadi's Terms of Use. Select the Account and input the name and email for the responsible point of contact. Finally, select the Language for the communication and T & C version. Keep in mind an email will be sent to the point of contact for such approval.
+				.col-12.contract--container
+					.col-12.col-lg-6
+						label.form__label
+							strong Select An Account
+						.input-container
+							input(type="text" placeholder="Laureate")
+					.col-12.col-lg-6
+						label.form__label
+							strong Signing Auth Email
+						.input-container
+							input(type="text" placeholder="SU2020")
+					.col-12.col-lg-6
+						label.form__label
+							strong FULL SIGNATURE AUTHENTICATION NAME
+						label.form__label
+							span Format Must Contain al leats: 5 characters. Numbers not allowed. Ex: name lastname.
+						.input-container
+							input(type="text" placeholder="SU2020")
+
+					.col-12.col-lg-6
+						label.form__label
+							strong languages available for contact content
+						.input-container
+							input(type="text" placeholder="SUMADI.INSID_PROD")
