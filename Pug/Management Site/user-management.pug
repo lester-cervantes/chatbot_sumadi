@@ -16,12 +16,18 @@ block main-content
 						#tab-one-panel.panel--box
 							.col-12
 								.row.panel--box-header
-									.col-6
+									.col-12.col-md-6
 										.title.title--medium User Management
-									.col-6
+									.col-12.col-md-6
 										button.button--normal.float-right Add New User
 							.col-12
 								span Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+								.alert.alert--success
+									p User Successfully Created.
+									a: i.fas.fa-times-circle
+								.alert.alert--error
+									p Error. This user already exist, please add a different name.
+									a: i.fas.fa-times-circle
 							.col-12.table
 								.row.table--header
 									.col-12.col-md-2

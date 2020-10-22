@@ -142,3 +142,29 @@
 		margin-top: 5%;
 	}
 }
+
+
+/* Placeholder Container
+**********************/
+
+.placeholder-container {
+	text-align: center;
+	padding-top: $spacer-xxl;
+	padding-bottom: $spacer-xxl;
+	i {
+		background: $gradient;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		@include font-size(80px);
+	}
+}
+
+
+.login-body {
+	.panel.panel--xsmall {
+		margin-top: 5%;
+	}
+	footer {
+		position: fixed !important;
+	}
+}

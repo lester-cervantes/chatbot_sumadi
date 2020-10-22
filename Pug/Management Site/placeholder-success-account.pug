@@ -1,0 +1,13 @@
+extend includes/layout-normal.pug
+block main-content
+	.container
+		.row
+			.col-12.section--boxed
+				.title.title--medium Add New Account
+				+wizard({'activeStep': 3})
+				.wizard-content
+					.row.placeholder-container
+						.col-12
+							i.fas.fa-check-circle
+							h2 Success
+							p Account Successfully Created.
