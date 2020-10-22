@@ -1,0 +1,97 @@
+extend includes/layout-normal.pug
+block main-content
+    .container.container--report
+        .section--boxed
+            .row
+                .col-12.title-container
+                        h3 Reports
+            .row
+                .col-12
+                    span Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+            .row.card-info-container
+                .card-info.card-info--image
+                    .left-panel
+                        img(src="images/trending_up-white-18dp.svg")
+                    .right-panel
+                        .row
+                            .col-12
+                                h2.number 12
+                        .row
+                            .col-12
+                                .subtext Active
+                                .subtext Accounts
+                .card-info.card-info--no-image
+                    h2.top 18/25
+                    .subheader Accounts Have Active Exams
+                .card-info.card-info--no-image
+                    h2.top 1,200
+                    .subheader STUDENTS TAKING AN EXAM RIGHT NOW
+                .input--search
+                    input(type="text" class="search" placeholder="SEARCH")
+                    img(src="images/search-black-18dp.svg")
+            .row.divider
+                
+            .row 
+                .col-12.table.table--reports
+                    .row.table--header
+                        .col-12.col-md-4
+                            span Institution Name
+                        .col-12.col-md-2
+                            span Email
+                        .col-12.col-md-2
+                            span Status
+                        .col-12.col-md-2
+                            span Exams by Institution
+                        .col-12.col-md-2
+                            span Actions
+                            
+                    .row.table--reports-content
+                        .col-12.col-md-4
+                            .table--colum
+                                span Universidad de Especialidades Espiritu Santo
+                        .col-12.col-md-2
+                            .table--colum
+                                span institution@email.com
+                        .col-12.col-md-2
+                            .table--colum
+                                span Active
+                        .col-12.col-md-2
+                            .table--colum
+                                .table__cell--circle 10
+                        .col-12.col-md-2
+                            .table--colum
+                                .button--gradient Download Report
+                            
+                    .row.table--reports-content
+                        .col-12.col-md-4
+                            .table--colum
+                                span Universidad de Especialidades Espiritu Santo
+                        .col-12.col-md-2
+                            .table--colum
+                                span institution@email.com
+                        .col-12.col-md-2
+                            .table--colum
+                                span Active
+                        .col-12.col-md-2
+                            .table--colum
+                                .table__cell--circle 21
+                        .col-12.col-md-2
+                            .table--colum
+                                .button--gradient Download Report
+
+                    .row.table--reports-content
+                        .col-12.col-md-4
+                            .table--colum
+                                span Universidad de Especialidades Espiritu Santo
+                        .col-12.col-md-2
+                            .table--colum
+                                span institution@email.com
+                        .col-12.col-md-2
+                            .table--colum
+                                span Active
+                        .col-12.col-md-2
+                            .table--colum
+                                .table__cell--circle 12
+                        .col-12.col-md-2
+                            .table--colum
+                                .button--gradient Download Report

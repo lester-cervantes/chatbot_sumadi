@@ -138,3 +138,17 @@ input[type=checkbox] + label:before {
 		@includes font-size(14px);
 	}
 }
+
+.button--gradient {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 210px;
+	background: $gradient-button;
+	border-radius: 8px;
+	padding: 10px;
+	color: $white;
+	font-family: $font-secondary;
+	font-weight: 600;
+	cursor: pointer;
+}

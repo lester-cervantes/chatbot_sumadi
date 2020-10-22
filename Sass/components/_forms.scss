@@ -121,3 +121,46 @@ input[type=checkbox]:checked + label:before {
 	color: $grey-light-1;
 	@include font-size(12px);
 }
+
+.input--search {
+	display: flex;
+	margin: 20px 15px;
+	position: relative;
+	width: 100%;
+	height: 50px;
+	.search {
+		position: absolute;
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+		margin: 0 0 0 auto;
+		align-self: flex-end;
+		@include box-shadow;
+		border: 1px solid $grey-light-2;
+	}
+	img {
+		position: absolute;
+		height: 26px;
+		width: 26px;
+		right: 5px;
+		top: 50%;
+		margin-top: -13px;
+		z-index: 2;
+		color: red;
+	}
+	@include media(desktop-s) {
+		width: 400px;
+		height: 50px;
+		margin: 15px 0 0 auto;
+	}
+}
+
+
+
+input[type=text] {
+ &::placeholder {
+	 font-family: $font-core;
+	 font-weight: 900;
+	 color: $grey-light-1;
+ }
+}

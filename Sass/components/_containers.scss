@@ -123,7 +123,6 @@
 			margin-right: $spacer-s;
 			font-weight: 900;
 		}
-
 		button.button--normal {
 			margin: 0px;
 			height: 40px;
@@ -132,3 +131,26 @@
 		}
 	}
 }
+
+.container--report {
+	&__title {
+		font-size: 5px;
+	}
+	.divider {
+		height: 3px;
+		width: 100%;
+		border: none;
+		background-color: $purple-light;
+	}
+}
+
+.card-info-container {
+	display: flex;
+	align-items: flex-end;
+	padding: 0px;
+	width: 100%;
+	min-height: 150px;
+	display: flex;
+
+}
+
