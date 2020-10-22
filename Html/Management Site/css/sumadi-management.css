@@ -5790,7 +5790,8 @@ body.login-body footer a {
   width: 180px;
   height: 35px;
   margin-top: 0;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+}
 
 .button--circle {
   height: 40px;
@@ -6230,11 +6231,13 @@ label.label.label--xs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 15px; }
-  .alert--success a {
-    float: right;
-    position: absolute;
-    right: 30px; }
+  margin-top: 15px;
+}
+.alert--success a {
+  float: right;
+  position: absolute;
+  right: 30px;
+}
 
 .alert--error {
   background-color: #FFD6DB;
@@ -6244,11 +6247,13 @@ label.label.label--xs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 15px; }
-  .alert--error a {
-    float: right;
-    position: absolute;
-    right: 30px; }
+  margin-top: 15px;
+}
+.alert--error a {
+  float: right;
+  position: absolute;
+  right: 30px;
+}
 
 /* Cards
 **********************/
@@ -6723,41 +6728,47 @@ label.label.label--xs {
 }
 
 .error-body {
-  text-align: center; }
-  .error-body h1 {
-    font-size: 180px;
-    line-height: 252px;
-    font-size: 11.25rem; }
-  .error-body .panel--medium {
-    margin-top: 5%; }
+  text-align: center;
+}
+.error-body h1 {
+  font-size: 180px;
+  line-height: 252px;
+  font-size: 11.25rem;
+}
+.error-body .panel--medium {
+  margin-top: 5%;
+}
 
 /* Placeholder Container
 **********************/
 .placeholder-container {
   text-align: center;
   padding-top: 80px;
-  padding-bottom: 80px; }
-  .placeholder-container i {
-    background: -webkit-gradient(linear, left top, right top, from(#00ddd6), to(#7979f6));
-    background: -webkit-linear-gradient(left, #00ddd6 0%, #7979f6 100%);
-    background: -o-linear-gradient(left, #00ddd6 0%, #7979f6 100%);
-    background: linear-gradient(90deg, #00ddd6 0%, #7979f6 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 80px;
-    line-height: 112px;
-    font-size: 5rem; }
+  padding-bottom: 80px;
+}
+.placeholder-container i {
+  background: -webkit-gradient(linear, left top, right top, from(#00ddd6), to(#7979f6));
+  background: -o-linear-gradient(left, #00ddd6 0%, #7979f6 100%);
+  background: linear-gradient(90deg, #00ddd6 0%, #7979f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 80px;
+  line-height: 112px;
+  font-size: 5rem;
+}
 
 .login-body .panel.panel--xsmall {
-  margin-top: 5%; }
-
+  margin-top: 5%;
+}
 .login-body footer {
-  position: fixed !important; }
+  position: fixed !important;
+}
 
 /* Contract Container
 **********************/
 .contract--container {
-  margin-top: 20px; }
+  margin-top: 20px;
+}
 
 /* Footer
 **********************/
