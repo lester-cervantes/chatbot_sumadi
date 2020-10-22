@@ -22,3 +22,31 @@
 .alert--bottom {
 	bottom: 0;
 }
+
+.alert--success {
+	background-color: $green-light;
+	border: 1px solid $green-normal;
+	padding: 5px;
+	border-radius: 5px;
+	display: flex;
+	margin-top: 15px;
+	a {
+		float: right;
+		position: absolute;
+    right: 30px;
+	}
+}
+
+.alert--error {
+	background-color: $red-light;
+	border: 1px solid $red-normal;
+	padding: 5px;
+	border-radius: 5px;
+	display: flex;
+	margin-top: 15px;
+	a {
+		float: right;
+		position: absolute;
+    right: 30px;
+	}
+}

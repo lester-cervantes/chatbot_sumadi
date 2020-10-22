@@ -154,3 +154,45 @@
 
 }
 
+.error-body {
+	text-align: center;
+	h1 {
+		@include font-size(180px);
+	}
+	.panel--medium {
+		margin-top: 5%;
+	}
+}
+
+
+/* Placeholder Container
+**********************/
+
+.placeholder-container {
+	text-align: center;
+	padding-top: $spacer-xxl;
+	padding-bottom: $spacer-xxl;
+	i {
+		background: $gradient;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		@include font-size(80px);
+	}
+}
+
+
+.login-body {
+	.panel.panel--xsmall {
+		margin-top: 5%;
+	}
+	footer {
+		position: fixed !important;
+	}
+}
+
+/* Contract Container
+**********************/
+
+.contract--container {
+	margin-top: 20px;
+}
