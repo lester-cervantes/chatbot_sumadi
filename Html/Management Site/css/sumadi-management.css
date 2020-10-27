@@ -5809,6 +5809,10 @@ body.login-body footer a {
   color: white;
 }
 
+.button--filter {
+  margin-left: auto;
+}
+
 /* Dropdown White XS
 **********************/
 .dropdown-white-xs {
@@ -6399,26 +6403,21 @@ label.label.label--xs {
   display: flex;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 4px;
   padding: 20px;
   width: 100%;
-  height: 138px;
-  margin: 0px 15px;
+  height: 150px;
 }
 @media only screen and (min-width: 992px) {
   .card-info {
-    width: 220px;
-    height: 138px;
+    height: 150px;
   }
 }
 
 .card-info--no-image {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -6474,9 +6473,6 @@ label.label.label--xs {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   background: -webkit-gradient(linear, right top, left top, from(#00ddd6), to(#7979f6));
   background: -o-linear-gradient(right, #00ddd6 0%, #7979f6 100%);
   background: linear-gradient(-90deg, #00ddd6 0%, #7979f6 100%);
@@ -6533,14 +6529,6 @@ label.label.label--xs {
   font-size: 12px;
   font-weight: bold;
   font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
-}
-
-.divider {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  height: 5px;
-  width: 100%;
-  margin: 30px 0;
 }
 
 /* Global Containers
@@ -6704,10 +6692,8 @@ label.label.label--xs {
   width: auto;
 }
 
-.container--report__title {
-  font-size: 5px;
-}
-.container--report .divider {
+.divider {
+  margin: 30px 0;
   height: 3px;
   width: 100%;
   border: none;
@@ -6939,6 +6925,8 @@ input[type=checkbox]:checked + label:before {
   display: flex;
   margin: 20px 15px;
   position: relative;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   width: 100%;
   height: 50px;
 }
@@ -6968,7 +6956,7 @@ input[type=checkbox]:checked + label:before {
   .input--search {
     width: 400px;
     height: 50px;
-    margin: 15px 0 0 auto;
+    margin: 15px 15px 0 auto;
   }
 }
 
@@ -8015,8 +8003,13 @@ ul.list .list__item .list__text .list__link {
   font-size: 14px;
 }
 
+.table--reports {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .table--reports-content {
-  padding: 15px 0;
+  padding: 15px;
   margin-top: 5px;
   background-color: #e0e6ed80;
   font-size: 16px;
