@@ -10,9 +10,10 @@
 
     &.loader-container--fullscreen {
         position: absolute;
-        background: $white;
+        background: rgba($white, 0.95);
         top: 0px;
         left: 0px;
+        z-index: 1;
     }
 }
 
