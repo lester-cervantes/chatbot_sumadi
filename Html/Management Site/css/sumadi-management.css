@@ -8071,6 +8071,12 @@ ul.list .list__item .list__text .list__link {
       -ms-flex-align: center;
           align-items: center;
 }
+.loader-container.loader-container--fullscreen {
+  position: absolute;
+  background: #FFFFFF;
+  top: 0px;
+  left: 0px;
+}
 
 .loader {
   display: -webkit-box;

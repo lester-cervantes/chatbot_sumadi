@@ -10,6 +10,39 @@
     <script src="https://kit.fontawesome.com/552ebddad2.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <div class="container header header--main">
+      <div class="col-12">
+        <div class="row">
+          <div class="col-2"><a class="header--main__logo"><img class="logo" src="../../Html/Management%20Site/images/logo.png"></a></div>
+          <div class="col-8">
+            <nav class="nav--main">
+              <ul>
+                <li><a class="nav--main__item--selected">Dashboard</a></li>
+                <li><a>User</a></li>
+                <li><a>Accounts</a></li>
+                <li><a>Digital Contract</a></li>
+                <li><a>Reports</a></li>
+                <li><a>Portada</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-2">
+            <nav class="nav--secondary">
+              <div class="dropdown-white-xs dropdown--transparent">
+                <input id="status" type="checkbox">
+                <label for="status">
+                  <h5>Daniela Andino</h5><i class="fas fa-chevron-down"></i>
+                </label>
+                <ul>
+                  <li class="selected-category"><span>My Account</span></li>
+                  <li><span>Log out</span></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--+topbar()-->
     <section class="container--main container--main__no-sidebar">
       <div class="container">
@@ -31,6 +64,16 @@
               </div>
             </div>
             <div class="wizard-content">
+              <div class="loader-container loader-container--fullscreen">
+                <div class="loader">
+                  <div class="loader-dot"></div>
+                  <div class="loader-dot"></div>
+                  <div class="loader-dot"></div>
+                  <div class="loader-dot"></div>
+                  <div class="loader-dot"></div>
+                </div>
+                <div class="loader-text">Loading...</div>
+              </div>
               <div class="row">
                 <div class="col-12 col-lg-6">
                   <label class="form__label"><strong>Institution Name</strong></label>

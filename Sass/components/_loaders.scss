@@ -7,6 +7,13 @@
     padding: 40px;
     justify-content: center;
     align-items: center;
+
+    &.loader-container--fullscreen {
+        position: absolute;
+        background: $white;
+        top: 0px;
+        left: 0px;
+    }
 }
 
 .loader {display: flex;}
@@ -26,19 +33,19 @@
     animation-fill-mode: both;
 
     &:nth-child(1) {
-        animation-delay: 0.1s;
+        animation-delay: 0.1s; 
     }
     &:nth-child(2) {
-        animation-delay: 0.2s;
+        animation-delay: 0.2s; 
     }
     &:nth-child(3) {
-        animation-delay: 0.3s;
+        animation-delay: 0.3s; 
     }
     &:nth-child(4) {
-        animation-delay: 0.4s;
+        animation-delay: 0.4s; 
     }
     &:nth-child(5) {
-        animation-delay: 0.5s;
+        animation-delay: 0.5s; 
     }
 }
 
