@@ -17,13 +17,13 @@ input,
 	height: 40px;
 	font-weight: 400;
 	border-radius: $spacer-xss;
-  @include box-shadow;
-  border: 1px solid rgba($black,.10);
-  color: $black;
-  padding: 0px $spacer-s;
-  margin-bottom: $spacer-s;
-  @include font-size($text-s);
-  font-weight: 400;
+	@include box-shadow;
+	border: 1px solid rgba($black,.10);
+	color: $black;
+	padding: 0px $spacer-s;
+	margin-bottom: $spacer-s;
+	@include font-size($text-s);
+	font-weight: 400;
 	line-height: 40px;
 }
 
@@ -43,13 +43,13 @@ textarea {
 
 select {
 	-webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 	min-width: 150px;
 	font-weight: bold;
-  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiI+DQo8cG9seWdvbiBvcGFjaXR5PSIwLjciIHBvaW50cz0iMCw0IDE2LDQgOCwxMiIvPg0KPC9zdmc+DQo=');
-  background-repeat: no-repeat;
-  background-position: calc(100% - .5em) 50%;
+	background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiI+DQo8cG9seWdvbiBvcGFjaXR5PSIwLjciIHBvaW50cz0iMCw0IDE2LDQgOCwxMiIvPg0KPC9zdmc+DQo=');
+	background-repeat: no-repeat;
+	background-position: calc(100% - .5em) 50%;
 	background-size: 12px;
 }
 
@@ -110,6 +110,8 @@ input[type=checkbox]:checked + label:before {
 		margin-right: $spacer-s;
 		min-width: 100px;
 		width: auto;
+		padding-right: $spacer-m;
+    	width: 100%;
 	}
 	input {
 		width: 100%;

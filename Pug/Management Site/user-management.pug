@@ -84,27 +84,15 @@ block main-content
 										.table--colum
 											span August 31,2020.
 									.col-12.col-md-2
-										.dropdown-white-xs
-											input#status(type='checkbox')
-											label(for='status')
-												h5 Inactive
-												i.fas.fa-chevron-down
-											ul
-												li.selected-category
-													span Inactive
-												li
-													span Active
+										.input-container
+											select
+												option Active
+												option Inactive
 									.col-12.col-md-2
-										.dropdown-white-xs
-											input#role(type='checkbox')
-											label(for='role')
-												h5 Administrator
-												i.fas.fa-chevron-down
-											ul
-												li.selected-category
-													span Administrator
-												li
-													span User
+										.input-container
+											select
+												option Administrator
+												option User
 									.col-12.col-md-2
 										.table--colum
 											ul
