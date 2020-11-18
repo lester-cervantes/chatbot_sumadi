@@ -4486,6 +4486,11 @@ label.label.label--xs {
 .sumadi-modal a i.fas.fa-times-circle {
   float: right; }
 
+.modal-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 /* Alerts
 **********************/
 .alert--bottom {
