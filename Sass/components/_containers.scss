@@ -98,14 +98,19 @@
 
 .section--boxed {
 	background: $white;
-  @include box-shadow;
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  min-width: 90%;
-  padding: $spacer-l;
-  height: 100%;
+	@include box-shadow;
+	border-radius: 4px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	min-width: 90%;
+	padding: $spacer-m;
+	height: 100%;
+
+	@include media(desktop-s) {
+		flex-direction: column;
+		padding: $spacer-l;
+	}
 }
 
 .spacer--s--vertical {
@@ -119,6 +124,7 @@
 	margin-bottom: $spacer-m;
 
 	&.title-container--with-components {
+		justify-content: space-between;
 		.title {
 			margin-right: $spacer-s;
 			font-weight: 900;
@@ -193,4 +199,50 @@
 
 .contract--container {
 	margin-top: 20px;
+}
+
+.popover--internal {
+	background: $grey-light-2;
+	width: 100%;
+	height: 0px;
+	margin: 0px;
+	margin-top: 16px;
+	padding: 0px;
+	border-radius: 4px;
+	position: relative;
+	opacity: 0;
+	visibility: hidden;
+	transform: scaleY(0);
+	transition: 0.25s all cubic-bezier(0.65, 0.05, 0.36, 1);
+
+	&.show {
+		opacity: 1;
+		visibility: visible;
+		height: 100%;
+		padding: 16px 0px;
+		transform: scaleY(1);
+	}
+
+	&:after {
+		bottom: 100%;
+		left: 32px;
+		border: solid transparent;
+		content: "";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+		border-color: rgba($grey-light-2, 0);
+		border-bottom-color: $grey-light-2;
+		border-width: 12px;
+		margin-left: -16px;
+	}
+}
+
+.wizard-action-container {
+	display: flex;
+	flex-direction: row;
+	margin-top: $spacer-l;
+	justify-content: space-between;
+	align-items: center;
 }

@@ -63,3 +63,68 @@ ul.list {
 		}
 	}
 }
+
+
+
+.list--institution {
+    border: 1px solid #e7e6f7;
+    border-left: none;
+    border-right: none;
+    padding: 16px 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 16px;
+
+	.list__content {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-bottom: $spacer-s;
+
+		img.list__img {
+			height: 64px;
+			margin-right: 8px;
+		}
+		.list__text {
+			.list__subtitle {
+				font-size: 12px;
+				line-height: 12px;
+				text-transform: uppercase;
+				margin: 4px 0px;
+			}
+			.list__title {
+				font-size: 16px;
+				line-height: 16px;
+				font-weight: 900;
+			}
+		}
+
+
+		.list__text--secondary {
+			padding: 0px 16px;
+			border-right: 1px solid #e7e6f7;
+
+			.list__subtitle {
+				font-size: 12px;
+				font-weight: 600;
+				line-height: 12px;
+				text-transform: uppercase;
+				margin: 4px 0px;
+			}
+			.list__title {
+				font-size: 16px;
+				line-height: 16px;
+				font-weight: 300;
+			}
+			
+			&:last-child {
+				border: none;
+			}
+		}
+	}
+
+	@include media(desktop-s) {
+		flex-direction: row;
+	}
+}

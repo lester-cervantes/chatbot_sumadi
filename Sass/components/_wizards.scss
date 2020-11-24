@@ -12,7 +12,7 @@
   border-bottom: 3px solid rgba($purple-normal, 0.2);
 }
 .wizard-content{
-	padding: 0px $spacer-xl;
+	padding: 0px $spacer-xs;
 	flex: 1;
 	display: flex;
 	flex-direction: column;
@@ -27,6 +27,26 @@
 		}
 		.card-container--stats{
 			margin: 0px;
+		}
+	}
+
+	@include media(desktop-s) {
+		padding: 0px $spacer-xl;
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		.wizard__title{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: space-between;
+			.wizard__title-text{
+				flex: 1;
+				margin-right: 24px;
+			}
+			.card-container--stats{
+				margin: 0px;
+			}
 		}
 	}
 }

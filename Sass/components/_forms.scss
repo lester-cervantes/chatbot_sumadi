@@ -13,7 +13,7 @@ label {
 input,
 .input--fake, select{
 	border: none;
-	min-width: 300px;
+	min-width: 150px;
 	height: 40px;
 	font-weight: 400;
 	border-radius: $spacer-xss;
@@ -105,6 +105,7 @@ input[type=checkbox]:checked + label:before {
 .input-container {
 	display: flex;
 	flex-direction: row;
+	margin-bottom: 16px;
 	.input--fake,
 	select {
 		margin-right: $spacer-s;
@@ -117,6 +118,22 @@ input[type=checkbox]:checked + label:before {
 		width: 100%;
 	}
 }
+
+
+.input-container--with-popover {
+	justify-content: space-between;
+	display: flex;
+	flex-direction: column;
+	.input-container {
+		flex-direction: column;
+		flex: 1;
+
+		.input-container {
+			margin-bottom: 0px;
+		}
+	}
+}
+
 
 .warning-input {
 	text-transform: uppercase;

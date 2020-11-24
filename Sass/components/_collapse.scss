@@ -1,0 +1,42 @@
+.collapse {
+    .collapse-toggle {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: $spacer-s;
+        border-radius: $spacer-xs;
+        border: 1px solid rgba($grey-light-1, 0.2);
+        @include box-shadow();
+        text-decoration: none;
+        transition: all 0.25s cubic-bezier(0.65, 0.05, 0.36, 1);
+        .collapse-toggle__text {
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .collapse-toggle__icon {}
+
+        &:active,
+        &:focus,
+        &:hover {
+            background: rgba($purple-dark, 0.05);
+        }
+    }
+    .collapse-content {
+        padding: $spacer-m;
+        display: none;
+    }
+
+    &.collapse--open {
+        .collapse-toggle {
+            background: rgba($purple-dark, 0.82);
+            .collapse-toggle__text,
+            .collapse-toggle__icon {
+                color: $white;
+            }
+        }
+        .collapse-content {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,285 @@
+extend includes/layout-normal.pug
+block main-content
+    .container
+        .row
+            .col-12.section--boxed
+                .row
+                    .col-12.title-container.title-container--with-components
+                        .title Account Detail
+                        .switch
+                            input(type="checkbox" checked="checked")
+                            span.slider
+                                .switch__text.switch__text--on ON
+                                .switch__text.switch__text--off OFF
+
+                .row
+                    .col-12.list--institution
+                        .list__content
+                            img(src="images/school.svg").list__img
+                            .list__text
+                                label.label.label--xs Stage
+                                .list__subtitle Institution
+                                .list__title Universidad de Especialidades Espiritu Santo
+                        .list__content
+                            .list__text--secondary
+                                .list__subtitle Institution name
+                                .list__title Universidad de Especialidades Espiritu Santo
+                            .list__text--secondary
+                                .list__subtitle Institution ID
+                                .list__title SU2020
+
+                .row
+                    .col-12
+                        h5 Institution Rules
+                        +wizard-v2({'activeStep': 1})
+                        .wizard-content
+                            h5 Institution Services
+                            .row
+                                .col-12.col-lg-6
+                                    label.form__label
+                                        strong Google Analytics Track ID
+                                    .input-container
+                                        input(type="text" placeholder="UA-123434543543-4")
+                                .col-12.col-lg-6
+                                    label.form__label
+                                        strong AWS - Rekonigtion Collection ID
+                                    .input-container
+                                        input(type="text" placeholder="SU2020")
+                            .collapse.collapse--open
+                                a.collapse-toggle
+                                    .collapse-toggle__text Proctoring
+                                    .collapse-toggle__icon
+                                        i.fas.fa-chevron-up
+                                .collapse-content
+                                    .row
+                                        .col-12.col-lg-6.input-container--with-popover
+                                            label.form__label
+                                                strong User Monitoring
+                                            .input-container
+                                                .switch
+                                                    input(type="checkbox" checked="checked")
+                                                    span.slider
+                                                        .switch__text.switch__text--on ON
+                                                        .switch__text.switch__text--off OFF
+                                                .row.popover--internal.show: .col-12
+                                                    label.form__label
+                                                        strong Webcam full report
+                                                    .input-container
+                                                        .switch
+                                                            input(type="checkbox" checked="checked")
+                                                            span.slider
+                                                                .switch__text.switch__text--on ON
+                                                                .switch__text.switch__text--off OFF
+
+                                        .col-12.col-lg-6.input-container--with-popover
+                                            label.form__label
+                                                strong Photobank Endpoint
+                                            .input-container
+                                                .switch
+                                                    input(type="checkbox")
+                                                    span.slider
+                                                        .switch__text.switch__text--on ON
+                                                        .switch__text.switch__text--off OFF
+                                                .row.popover--internal: .col-12
+                                                    label.form__label
+                                                        strong Photobank Endpoint
+                                                    .input-container
+                                                        input(type="text" placeholder="10")
+
+                                        .col-12.col-lg-6.input-container--with-popover
+                                            label.form__label
+                                                strong Focus monitoring
+                                            .input-container
+                                                .switch
+                                                    input(type="checkbox" checked="checked")
+                                                    span.slider
+                                                        .switch__text.switch__text--on ON
+                                                        .switch__text.switch__text--off OFF
+                                                .row.popover--internal.show
+                                                    .col-12.mb-2
+                                                        label.form__label
+                                                            strong Focus loss allowed timeout (sec)
+                                                        .input-container
+                                                            input(type="text" placeholder="10")
+                                                    .col-12
+                                                        label.form__label
+                                                            strong Take screenshot
+                                                        .input-container
+                                                            .switch
+                                                                input(type="checkbox" checked="checked")
+                                                                span.slider
+                                                                    .switch__text.switch__text--on ON
+                                                                    .switch__text.switch__text--off OFF
+
+                                        .col-12.col-lg-6.input-container--with-popover
+                                            label.form__label
+                                                strong ID Verification
+                                            .input-container
+                                                .switch
+                                                    input(type="checkbox" checked="checked")
+                                                    span.slider
+                                                        .switch__text.switch__text--on ON
+                                                        .switch__text.switch__text--off OFF
+                                                
+                                                .row.popover--internal.show
+                                                    .col-12.col-lg-4.mb-2
+                                                        label.form__label
+                                                            strong First name
+                                                        .input-container
+                                                            .switch
+                                                                input(type="checkbox" checked="checked")
+                                                                span.slider
+                                                                    .switch__text.switch__text--on ON
+                                                                    .switch__text.switch__text--off OFF
+                                                    .col-12.col-lg-6.mb-2
+                                                        label.form__label
+                                                            strong Last name
+                                                        .input-container
+                                                            .switch
+                                                                input(type="checkbox" checked="checked")
+                                                                span.slider
+                                                                    .switch__text.switch__text--on ON
+                                                                    .switch__text.switch__text--off OFF
+                                                    .col-12.mb-2
+                                                        label.form__label
+                                                            strong Enforce face recognition
+                                                        .input-container
+                                                            .switch
+                                                                input(type="checkbox" checked="checked")
+                                                                span.slider
+                                                                    .switch__text.switch__text--on ON
+                                                                    .switch__text.switch__text--off OFF
+                                                    .col-12
+                                                        label.form__label
+                                                            strong Confidence level
+                                                        .input-container
+                                                            input(type="text" placeholder="98")
+                            
+                            .collapse
+                                a.collapse-toggle
+                                    .collapse-toggle__text Typing DNA
+                                    .collapse-toggle__icon
+                                        i.fas.fa-chevron-down
+                                .collapse-content
+                                    .row
+                                        .col-12.col-lg-6
+                                            label.form__label
+                                                strong Key
+                                            .input-container
+                                                input(type="text" placeholder="")
+                                        .col-12.col-lg-6
+                                            label.form__label
+                                                strong Secret
+                                            .input-container
+                                                input(type="text" placeholder="")
+                                        .col-12.col-lg-6
+                                            label.form__label
+                                                strong Confidence level
+                                            .input-container
+                                                input(type="text" placeholder="")
+                                        .col-12.col-lg-6
+                                            label.form__label
+                                                strong URL
+                                            .input-container
+                                                input(type="text" placeholder="")
+                            
+                            .collapse.collapse--open
+                                a.collapse-toggle
+                                    .collapse-toggle__text Chatbot
+                                    .collapse-toggle__icon
+                                        i.fas.fa-chevron-down
+                                .collapse-content
+                                    .row
+                                        .col-12.col-lg-6
+                                            label.form__label
+                                                strong Chatbot wizard
+                                            .input-container
+                                                .switch
+                                                    input(type="checkbox" checked="checked")
+                                                    span.slider
+                                                        .switch__text.switch__text--on ON
+                                                        .switch__text.switch__text--off OFF
+                                        .col-12.col-lg-6
+                                            label.form__label
+                                                strong Helpdesk email
+                                            .input-container
+                                                input(type="text" placeholder="help@email.com")
+                                        .col-12.col-lg-6
+                                            label.form__label
+                                                strong Chatbot exam
+                                            .input-container
+                                                .switch
+                                                    input(type="checkbox" checked="checked")
+                                                    span.slider
+                                                        .switch__text.switch__text--on ON
+                                                        .switch__text.switch__text--off OFF
+                                        .col-12.col-lg-6
+                                            label.form__label
+                                                strong ID
+                                            .input-container
+                                                input(type="text" placeholder="12345")
+                                        .col-12.col-lg-6
+                                            label.form__label
+                                                strong Chatbot face registration
+                                            .input-container
+                                                .switch
+                                                    input(type="checkbox" checked="checked")
+                                                    span.slider
+                                                        .switch__text.switch__text--on ON
+                                                        .switch__text.switch__text--off OFF
+                                        .col-12.col-lg-6
+                                            label.form__label
+                                                strong Chatbot typing registration
+                                            .input-container
+                                                .switch
+                                                    input(type="checkbox" checked="checked")
+                                                    span.slider
+                                                        .switch__text.switch__text--on ON
+                                                        .switch__text.switch__text--off OFF
+                            
+                            .collapse
+                                a.collapse-toggle
+                                    .collapse-toggle__text Account Reports
+                                    .collapse-toggle__icon
+                                        i.fas.fa-chevron-down
+                                .collapse-content
+                                    .row
+                                        .col-12.col-lg-6
+                                            label.form__label
+                                                strong Registration profiles
+                                            .input-container
+                                                .switch
+                                                    input(type="checkbox" checked="checked")
+                                                    span.slider
+                                                        .switch__text.switch__text--on ON
+                                                        .switch__text.switch__text--off OFF
+                                        .col-12.col-lg-6
+                                            label.form__label
+                                                strong Assessments
+                                            .input-container
+                                                .switch
+                                                    input(type="checkbox" checked="checked")
+                                                    span.slider
+                                                        .switch__text.switch__text--on ON
+                                                        .switch__text.switch__text--off OFF
+                                        .col-12.col-lg-6
+                                            label.form__label
+                                                strong Courses
+                                            .input-container
+                                                .switch
+                                                    input(type="checkbox" checked="checked")
+                                                    span.slider
+                                                        .switch__text.switch__text--on ON
+                                                        .switch__text.switch__text--off OFF
+                                        .col-12.col-lg-6
+                                            label.form__label
+                                                strong ID Scan
+                                            .input-container
+                                                .switch
+                                                    input(type="checkbox" checked="checked")
+                                                    span.slider
+                                                        .switch__text.switch__text--on ON
+                                                        .switch__text.switch__text--off OFF
+
+                        .row: .col-12.wizard-action-container
+                            button.button--normal Save
