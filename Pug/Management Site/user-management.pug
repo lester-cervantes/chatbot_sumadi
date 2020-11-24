@@ -110,62 +110,281 @@ block main-content
 									.col-6
 										button.button--normal.float-right Add New Role
 							.col-12
-								span Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-								.alert.alert--success
-									p Success: Role Successfully Created.
-									a: i.fas.fa-times-circle
-								.alert.alert--error
-									p Error: Role already exist, please add a different name.
-									a: i.fas.fa-times-circle
-							.col-12.table
-								.row.table--header
-									.col-12.col-md-3
-										span Role
-									.col-12.col-md-2
-										span Privileges
-									.col-12.col-md-5
-										span Summary
-									.col-12.col-md-2
-										span Actions
-										
-								.row.table--content
-									.col-12.col-md-3
-										.table--colum
-											span Administrator
-									.col-12.col-md-2
-										.table--colum
-											span Administrator
-									.col-12.col-md-5
-										.table--colum
-											span Lorem ipsum dolor sit amet, consectetur adipiscing elit
-									.col-12.col-md-2
-										.table--colum
-											ul
-												li
-													a(href='#'): .button--circle
-														i.fas.fa-pen
-												li
-													a(href='#'): .button--circle
-														i.fas.fa-trash
-										
-								.row.table--content
-									.col-12.col-md-3
-										.table--colum
-											span Administrator
-									.col-12.col-md-2
-										.table--colum
-											span Administrator
-									.col-12.col-md-5
-										.table--colum
-											span Lorem ipsum dolor sit amet, consectetur adipiscing elit
-									.col-12.col-md-2
-										.table--colum
-											ul
-												li
-													a(href='#'): .button--circle
-														i.fas.fa-pen
-												li
-													a(href='#'): .button--circle
-														i.fas.fa-trash
-						#tab-three-panel.panel--box
-							span 3
+								.table--scrollable-container
+									table
+										thead
+											tr
+												th
+													span Name
+												th
+													span Email
+												th
+													span Last Activity
+												th
+													span Status
+												th
+													span Role
+												th
+													span Actions
+										tbody
+											tr
+												td
+													.avatar.avatar--table
+														img(src="images/users/user01.png").avatar--small
+														.avatar--name
+															span Clyde Dixon
+												td
+														span clyde.dixon@email.com
+												td
+														span August 31,2020.
+												td
+														span Active
+												td
+														span Administrator
+												td
+													ul.icon-cell
+														li
+															a(href='#'): .button--circle
+																i.fas.fa-pen
+														li
+															a(href='#'): .button--circle
+																i.fas.fa-trash
+												
+											tr
+												td
+													.avatar.avatar--table
+														img(src="images/users/user01.png").avatar--small
+														.avatar--name
+															span Clyde Dixon
+												td
+														span clyde.dixon@email.com
+												td
+														span August 31,2020.
+												td
+													.dropdown-white-xs
+														input#status(type='checkbox')
+														label(for='status')
+															h5 Inactive
+															i.fas.fa-chevron-down
+														ul
+															li.selected-category
+																span Inactive
+															li
+																span Active
+												td
+													.dropdown-white-xs
+														input#role(type='checkbox')
+														label(for='role')
+															h5 Administrator
+															i.fas.fa-chevron-down
+														ul
+															li.selected-category
+																span Administrator
+															li
+																span User
+												td
+													ul.icon-cell
+														li
+															a(href='#'): .button--circle
+																i.fas.fa-pen
+														li
+															a(href='#'): .button--circle
+																i.fas.fa-trash
+											tr
+												td
+													.avatar.avatar--table
+														img(src="images/users/user01.png").avatar--small
+														.avatar--name
+															span Clyde Dixon
+												td
+														span clyde.dixon@email.com
+												td
+														span August 31,2020.
+												td
+													.dropdown-white-xs
+														input#status(type='checkbox')
+														label(for='status')
+															h5 Inactive
+															i.fas.fa-chevron-down
+														ul
+															li.selected-category
+																span Inactive
+															li
+																span Active
+												td
+													.dropdown-white-xs
+														input#role(type='checkbox')
+														label(for='role')
+															h5 Administrator
+															i.fas.fa-chevron-down
+														ul
+															li.selected-category
+																span Administrator
+															li
+																span User
+												td
+													ul.icon-cell
+														li
+															a(href='#'): .button--circle
+																i.fas.fa-pen
+														li
+															a(href='#'): .button--circle
+																i.fas.fa-trash
+											tr
+												td
+													.avatar.avatar--table
+														img(src="images/users/user01.png").avatar--small
+														.avatar--name
+															span Clyde Dixon
+												td
+														span clyde.dixon@email.com
+												td
+														span August 31,2020.
+												td
+													.dropdown-white-xs
+														input#status(type='checkbox')
+														label(for='status')
+															h5 Inactive
+															i.fas.fa-chevron-down
+														ul
+															li.selected-category
+																span Inactive
+															li
+																span Active
+												td
+													.dropdown-white-xs
+														input#role(type='checkbox')
+														label(for='role')
+															h5 Administrator
+															i.fas.fa-chevron-down
+														ul
+															li.selected-category
+																span Administrator
+															li
+																span User
+												td
+													ul.icon-cell
+														li
+															a(href='#'): .button--circle
+																i.fas.fa-pen
+														li
+															a(href='#'): .button--circle
+																i.fas.fa-trash
+											tr
+												td
+													.avatar.avatar--table
+														img(src="images/users/user01.png").avatar--small
+														.avatar--name
+															span Clyde Dixon
+												td
+														span clyde.dixon@email.com
+												td
+														span August 31,2020.
+												td
+													.dropdown-white-xs
+														input#status(type='checkbox')
+														label(for='status')
+															h5 Inactive
+															i.fas.fa-chevron-down
+														ul
+															li.selected-category
+																span Inactive
+															li
+																span Active
+												td
+													.dropdown-white-xs
+														input#role(type='checkbox')
+														label(for='role')
+															h5 Administrator
+															i.fas.fa-chevron-down
+														ul
+															li.selected-category
+																span Administrator
+															li
+																span User
+												td
+													ul.icon-cell
+														li
+															a(href='#'): .button--circle
+																i.fas.fa-pen
+														li
+															a(href='#'): .button--circle
+																i.fas.fa-trash
+								.row
+									.col-12
+										.pagination
+											a
+												i.fas.fa-chevron-left
+											a.active 1
+											a 2
+											a 3
+											a 4
+											a 5
+											a
+												i.fas.fa-chevron-right
+								#tab-two-panel.panel--box
+									.col-12
+										.row.panel--box-header
+											.col-6
+												.title.title--medium Roles Management
+											.col-6
+												button.button--normal.float-right Add New Role
+									.col-12
+										span Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+										.alert.alert--success
+											p Success: Role Successfully Created.
+											a: i.fas.fa-times-circle
+										.alert.alert--error
+											p Error: Role already exist, please add a different name.
+											a: i.fas.fa-times-circle
+									.col-12.table
+										.row.table--header
+											.col-12.col-md-3
+												span Role
+											.col-12.col-md-2
+												span Privileges
+											.col-12.col-md-5
+												span Summary
+											.col-12.col-md-2
+												span Actions
+												
+										.row.table--content
+											.col-12.col-md-3
+												.table--colum
+													span Administrator
+											.col-12.col-md-2
+												.table--colum
+													span Administrator
+											.col-12.col-md-5
+												.table--colum
+													span Lorem ipsum dolor sit amet, consectetur adipiscing elit
+											.col-12.col-md-2
+												.table--colum
+													ul
+														li
+															a(href='#'): .button--circle
+																i.fas.fa-pen
+														li
+															a(href='#'): .button--circle
+																i.fas.fa-trash
+										.row.table--content
+											.col-12.col-md-3
+												.table--colum
+													span Administrator
+											.col-12.col-md-2
+												.table--colum
+													span Administrator
+											.col-12.col-md-5
+												.table--colum
+													span Lorem ipsum dolor sit amet, consectetur adipiscing elit
+											.col-12.col-md-2
+												.table--colum
+													ul
+														li
+															a(href='#'): .button--circle
+																i.fas.fa-pen
+														li
+															a(href='#'): .button--circle
+																i.fas.fa-trash
+								#tab-three-panel.panel--box
+									span 3

@@ -47,70 +47,61 @@ block main-content
                             i.fas.fa-filter
                 .row 
                     .col-12
-                        .row.table.table--reports
-                            .col-12.table--header
-                                .row
-                                    .col-12.col-md-4
+                        .table--scrollable-container
+                            table
+                                thead
+                                    th
                                         span Institution Name
-                                    .col-12.col-md-2
+                                    th
                                         span Email
-                                    .col-12.col-md-2
+                                    th
                                         span Status
-                                    .col-12.col-md-2
+                                    th.button-header
                                         span Exams by Institution
-                                    .col-12.col-md-2
+                                    th.button-header
                                         span Actions
-                                    
-                            .col-12.table--reports-content
-                                .row
-                                    .col-12.col-md-4
-                                        .table--colum
-                                            span Universidad de Especialidades Espiritu Santo
-                                    .col-12.col-md-2
-                                        .table--colum
-                                            span institution@email.com
-                                    .col-12.col-md-2
-                                        .table--colum
-                                            span Active
-                                    .col-12.col-md-2
-                                        .table--colum
-                                            .table__cell--circle 10
-                                    .col-12.col-md-2
-                                        .table--colum
-                                            .button--gradient Download Report
-                                    
-                            .col-12.table--reports-content
-                                .row
-                                    .col-12.col-md-4
-                                        .table--colum
-                                            span Universidad de Especialidades Espiritu Santo
-                                    .col-12.col-md-2
-                                        .table--colum
-                                            span institution@email.com
-                                    .col-12.col-md-2
-                                        .table--colum
-                                            span Active
-                                    .col-12.col-md-2
-                                        .table--colum
-                                            .table__cell--circle 21
-                                    .col-12.col-md-2
-                                        .table--colum
-                                            .button--gradient Download Report
-
-                            .col-12.table--reports-content
-                                .row
-                                    .col-12.col-md-4
-                                        .table--colum
-                                            span Universidad de Especialidades Espiritu Santo
-                                    .col-12.col-md-2
-                                        .table--colum
-                                            span institution@email.com
-                                    .col-12.col-md-2
-                                        .table--colum
-                                            span Active
-                                    .col-12.col-md-2
-                                        .table--colum
-                                            .table__cell--circle 12
-                                    .col-12.col-md-2
-                                        .table--colum
-                                            .button--gradient Download Report
+                                tbody
+                                    tr
+                                        td
+                                                span Universidad de Especialidades Espiritu Santo
+                                        td
+                                                span institution@email.com
+                                        td
+                                                span Active
+                                        td.button-cell
+                                                .table__cell--circle 10
+                                        td.button-cell
+                                                .button--gradient Download Report
+                                    tr
+                                        td
+                                                span Universidad de Especialidades Espiritu Santo
+                                        td
+                                                span institution@email.com
+                                        td
+                                                span Active
+                                        td.button-cell
+                                                .table__cell--circle 21
+                                        td.button-cell
+                                                .button--gradient Download Report
+                                    tr
+                                        td
+                                                span Universidad de Especialidades Espiritu Santo
+                                        td
+                                                span institution@email.com
+                                        td
+                                                span Active
+                                        td.button-cell
+                                                .table__cell--circle 12
+                                        td.button-cell
+                                                .button--gradient Download Report
+                        .col-12
+                            .pagination
+                                a
+                                    i.fas.fa-chevron-left
+                                a.active 1
+                                a 2
+                                a 3
+                                a 4
+                                a 5
+                                a
+                                    i.fas.fa-chevron-right

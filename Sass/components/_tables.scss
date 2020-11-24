@@ -2,6 +2,78 @@
 /*  Tables
 **********************/
 
+table {
+	width: 100%;
+	border-spacing: 0px 5px;
+	border-collapse: separate;
+	thead tr {
+		background-color: $purple-light;
+		font-family: $font-secondary;
+		span {
+			font-weight: 700;
+			@include font-size($text-m);
+		}
+	}
+	tr {
+		margin-top: 5px;
+		background-color: #e0e6ed80;
+		@include font-size($text-m);
+	}
+	td, th {
+		text-align: left;
+	}
+	th:last-child, td:last-child {
+		text-align: center;
+	} 
+	th {
+		padding: 20px;
+		position: sticky;
+		top: 0;
+		z-index: 5;
+		background-color: $purple-light;
+	}
+	td {
+		padding: 10px 20px;
+		button {
+			display: block;
+			margin: 0 auto;
+			float: none!important;
+		}
+	}
+	.button-header {
+		text-align: center;
+	}
+	.button-cell {
+		.table__cell--circle, .button--gradient {
+			display: block;
+			margin: auto;
+		}
+	}
+	.icon-cell {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+	}
+	li {
+		margin: 5px;
+	}
+}
+
+.table--scrollable-container {
+	margin-top: 30px;
+	max-height: 700px;
+	overflow-y: auto;
+	position:relative;
+	thead {
+		position: relative;
+		top: 0px;
+	}
+	@include media(desktop-m) {
+		overflow-x: auto;
+	}
+}
+
 .table  {
 	margin-top: 30px;
 }
@@ -75,6 +147,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
+	line-height: 40px;
 	padding: 0;
 	height: 40px;
 	width: 40px;

@@ -63,9 +63,6 @@ ul.list {
 		}
 	}
 }
-
-
-
 .list--institution {
     border: 1px solid #e7e6f7;
     border-left: none;
@@ -128,3 +125,38 @@ ul.list {
 		flex-direction: row;
 	}
 }
+.pagination {
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	a {
+	  height: 30px;
+	  width: 30px;
+	  line-height: 30px;
+	  text-align: center;
+	  border-radius: 50%;
+	  &:hover {
+		background-color: $purple-light;
+		cursor: pointer;
+		color: white;
+	  }
+	  &.active {
+		background-color: $green-normal;
+		cursor: pointer;
+		color: white;
+	  }
+	}
+	img {
+		height: 30px;
+		width: 30px;
+		line-height: 30px;
+		text-align: center;
+		border-radius: 50%;
+	    &:hover {
+		background-color: $purple-light;
+		cursor: pointer;
+	  }
+	}
+  }
+  
