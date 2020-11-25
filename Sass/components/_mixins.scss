@@ -45,3 +45,7 @@
 @mixin box-shadow {
 	box-shadow: 2px 2px 4px 0 rgba($black,.10);
 }
+
+@mixin transition {
+	transition: all 0.25s cubic-bezier(0.65, 0.05, 0.36, 1);
+}

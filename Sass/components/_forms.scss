@@ -106,6 +106,8 @@ input[type=checkbox]:checked + label:before {
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 16px;
+	position: relative;
+
 	.input--fake,
 	select {
 		margin-right: $spacer-s;
@@ -116,6 +118,47 @@ input[type=checkbox]:checked + label:before {
 	}
 	input {
 		width: 100%;
+	}
+	
+	.input--with-elements {
+		position: relative;
+		width: 100%;
+		display: flex;
+		.input--fake,
+		select, input{
+			margin: 0;
+			padding-right: 108px;
+		}
+		.button--within-input {
+			position: absolute;
+			height: 100%;
+			right: 0;
+			top: 0;
+			width: 100px;
+			font-size: $text-xs;
+			font-weight: 600;
+			text-transform: uppercase;
+			color: $purple-normal;
+			border: none;
+			background: rgba($grey-light-2, 0);
+			cursor: pointer;
+			@include transition;
+
+			&:focus,
+			&:hover {
+				background: rgba($grey-light-2, 0.7);
+			}
+
+			&:active {
+				background: rgba($grey-light-2, 1);
+				color: $blue-dark;
+			}
+		}
+
+	}
+
+	.element--width-auto {
+		width: auto;
 	}
 }
 

@@ -6,7 +6,7 @@ block main-content
 				.title.title--medium Add New Account
 				+wizard({'activeStep': 1})
 				.wizard-content
-					+loader().loader-container--fullscreen
+					+loader()
 					.row
 						.col-12.col-lg-6
 							label.form__label
@@ -23,8 +23,8 @@ block main-content
 							label.form__label
 								strong Google Analytics Track ID
 							.input-container
-								select
-									option 1
+								select.element--width-auto
+									option UA
 								input(type="text" placeholder="123432498734")
 						.col-12.col-lg-6
 							label.form__label
@@ -35,25 +35,17 @@ block main-content
 
 						.col-12.col-lg-6
 							label.form__label
-								strong Services LMS LTI KEY
-								span E.G. 3RCS3CTCYNXEN3PG
+								strong Generate Password
 							.input-container
-								.input--fake SU2020
-								input(type="text" placeholder="DIM0ROY887e@")
+								.input--with-elements
+									input(type="text" placeholder="DIM0ROY887e@")
+									button.button--within-input Generate
+								.popover.popover--arrow-right.show
 
 						.col-12.col-lg-6
 							label.form__label
 								strong Services LMS LTI KEY
 								span E.G. 3RCS3CTCYNXEN3PG
 							.input-container
-								.input--fake SU2020
+								.input--fake.element--width-auto SU2020
 								input(type="text" placeholder="DIM0ROY887e@")
-					.row
-						.col-12.col-md-6.col-lg-4.col-xl-3.card__container
-							+card()
-						.col-12.col-md-6.col-lg-4.col-xl-3.card__container
-							+card()
-						.col-12.col-md-6.col-lg-4.col-xl-3.card__container
-							+card()
-						.col-12.col-md-6.col-lg-4.col-xl-3.card__container
-							+card()

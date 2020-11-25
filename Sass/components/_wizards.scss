@@ -6,10 +6,18 @@
 .wizard{
 	margin: 32px 0px;
 	display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  padding: 0px;
-  border-bottom: 3px solid rgba($purple-normal, 0.2);
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	padding: 0px;
+	border-bottom: 3px solid rgba($purple-normal, 0.2);
+
+	@include media(desktop-s) {
+		justify-content: space-between;
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
 }
 .wizard-content{
 	padding: 0px $spacer-xs;
@@ -51,18 +59,18 @@
 	}
 }
 .wizard-footer {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  margin-top: 32px;
-  position: relative;
-  min-height: 70px;
-  border-top: 1px solid $grey-light-1;
-  .btn{
-  	margin-left: 32px;
-  	min-width: 160px;
-  }
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	margin-top: 32px;
+	position: relative;
+	min-height: 70px;
+	border-top: 1px solid $grey-light-1;
+	.btn{
+		margin-left: 32px;
+		min-width: 160px;
+	}
 }
 
 
@@ -82,11 +90,14 @@
 	border-bottom: 3px solid rgba($purple-normal, 0);
 	margin-bottom: -3px;
 	justify-content: center;
+	transition: all 0.25s cubic-bezier(0.65, 0.05, 0.36, 1);
 	.step__number{
 		background-color: $grey-light-1;
 		border-radius: 50%;
 		box-shadow: 0px 0px 0px 2px $grey-light-2;
+		min-width: 30px;
 		width: 30px;
+		min-height: 30px;
 		height: 30px;
 		margin: 0px;
 		margin-right: $spacer-s;
@@ -107,7 +118,7 @@
 			display: inline-block;
 			color: $grey-light-1;
 			width: 100%;
-			text-align: center;
+			text-align: left;
 			font-weight: 500;
 			text-transform: uppercase;
 			@include font-size($text-s);
@@ -132,7 +143,11 @@
 	}
 
 	&.step--active{
-		border-bottom: 3px solid $purple-dark;
+		margin-left: $spacer-s;
+		@include media(desktop-s) {
+			margin-left: 0;
+			border-bottom: 3px solid $purple-dark;
+		}
 		.step__number{
 			background-color: $purple-dark;
 			box-shadow: 0px 0px 0px 4px rgba($purple-normal, 0.3);
