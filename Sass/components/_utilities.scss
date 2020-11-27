@@ -53,3 +53,12 @@ body.login-body {
 .full-height {
 	height: 100%;
 }
+
+.flex--row {
+	display: flex;
+}
+
+.row--border-bottom {
+	border-bottom: 1px solid #44596f38;
+    margin-bottom: 32px;
+}

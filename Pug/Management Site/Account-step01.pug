@@ -49,18 +49,30 @@ block main-content
 											button.button--transparent
 												i.fas.fa-copy 
 											button.button--transparent
-												i.fas.fa-copy
+												i.fas.fa-sync-alt
 									.row
-										.col-6.flex-column
+										.col-8.flex-row
 											strong Password Lenght
-											.input-container
-												.input--fake 12
-										.col-6
+											.input--fake 12
+											
+										.col-4
 											ul.list--verification
-												li.list-item UPPERCASE
-												li.list-item Symbol
-												li.list-item Lowercase
-												li.list-item Numbers
+												li.list-item 
+													label.checkbox--round 
+														input(type="checkbox").checkbox
+														span.checkbox__text Uppercase
+												li.list-item 
+													label.checkbox--round 
+														input(type="checkbox").checkbox
+														span.checkbox__text Symbol
+												li.list-item 
+													label.checkbox--round 
+														input(type="checkbox").checkbox
+														span.checkbox__text Lowercase
+												li.list-item 
+													label.checkbox--round 
+														input(type="checkbox").checkbox
+														span.checkbox__text Numbers
 
 						.col-12.col-lg-6
 							label.form__label

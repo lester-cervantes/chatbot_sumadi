@@ -214,6 +214,7 @@
 	visibility: hidden;
 	transform: scaleY(0);
 	top: 100%;
+	z-index: 1;
 	@include box-shadow;
 	@include transition;
 

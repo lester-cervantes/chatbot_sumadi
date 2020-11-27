@@ -175,3 +175,10 @@ input[type=checkbox] + label:before {
 		background: rgba($white, 0.4);
 	}
 }
+
+.button-group {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: flex-end;
+}
