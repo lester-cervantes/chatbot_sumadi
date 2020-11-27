@@ -5450,16 +5450,17 @@ input[type=text]::placeholder {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto; }
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    line-height: 40px; }
   .flex-row .input--fake {
     margin: 0;
     margin-left: 8px;
     min-width: 20px;
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
     width: auto; }
   .flex-row .slider {
     -webkit-box-flex: 1;

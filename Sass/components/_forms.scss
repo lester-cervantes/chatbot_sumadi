@@ -278,13 +278,14 @@ input[type=text] {
 	flex-wrap: wrap;
 	strong {
 		display: flex;
-		flex: 1 1 auto;
+		flex: 0 1 auto;
+		line-height: 40px;
 	}
 	.input--fake {
 		margin: 0;
 		margin-left: $spacer-xs;
 		min-width: 20px;
-		flex: 1 1 auto;
+		flex: 0 1 auto;
 		width: auto;
 	}
 	.slider {
