@@ -109,7 +109,7 @@ input[type=checkbox]:checked + label:before {
 .input-container {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	margin-bottom: 16px;
 	position: relative;
 
@@ -128,7 +128,7 @@ input[type=checkbox]:checked + label:before {
 		}
 	}
 	input {
-		width: 100%;
+		flex: 0 1 100%;
 	}
 	
 	.input--with-elements {
@@ -189,6 +189,9 @@ input[type=checkbox]:checked + label:before {
 		.input-container {
 			margin-bottom: 0px;
 		}
+		.input-message {
+			margin-top: -$spacer-xs;
+		}
 	}
 }
 
@@ -203,8 +206,8 @@ input[type=checkbox]:checked + label:before {
 	text-transform: uppercase;
 	color: $grey-light-1;
 	@include font-size(12px);
-	margin-top: -$spacer-xss;
-	margin-bottom: $spacer-xss;
+	margin-top: -$spacer-m;
+	margin-bottom: $spacer-s;
 	margin-left: $spacer-xss;
 	
 	&.input-message--success {
