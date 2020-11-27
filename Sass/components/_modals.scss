@@ -73,10 +73,19 @@
 	@include button($gradient,$purple-normal,$grey-light-2,$white);
 }
 
+.modal__button-close {
+    position: absolute;
+    right: 40px;
+}
+
 .sumadi-modal .header--with-image img {
 	width: auto;
 	max-width: 100px;
 	height: auto;
+}
+
+.sumadi-modal .header--with-image .header--with-image__content h2{
+	padding-right: 24px;
 }
 
 .sumadi-modal a i.fas.fa-times-circle {
@@ -85,4 +94,10 @@
 
 .modal-footer {
 	display: flex;
+}
+
+.react-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
 }

@@ -10,10 +10,43 @@
     <script src="https://kit.fontawesome.com/552ebddad2.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <div class="container header header--main">
+      <div class="col-12">
+        <div class="row">
+          <div class="col-2"><a class="header--main__logo"><img class="logo" src="../../Html/Management%20Site/images/logo.png"></a></div>
+          <div class="col-8">
+            <nav class="nav--main">
+              <ul>
+                <li><a class="nav--main__item--selected">Dashboard</a></li>
+                <li><a>User</a></li>
+                <li><a>Accounts</a></li>
+                <li><a>Digital Contract</a></li>
+                <li><a>Reports</a></li>
+                <li><a>Portada</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-2">
+            <nav class="nav--secondary">
+              <div class="dropdown-white-xs dropdown--transparent">
+                <input id="status" type="checkbox">
+                <label for="status">
+                  <h5>Daniela Andino</h5><i class="fas fa-chevron-down"></i>
+                </label>
+                <ul>
+                  <li class="selected-category"><span>My Account</span></li>
+                  <li><span>Log out</span></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--+topbar()-->
     <section class="container--main container--main__no-sidebar">
-      <div class="container--sumadi-modal">
-        <div class="sumadi-modal"><a><i class="fas fa-times-circle"></i></a>
+      <div class="container--sumadi-modal react-modal">
+        <div class="sumadi-modal"><a class="modal__button-close"><i class="fas fa-times-circle"></i></a>
           <div class="header--with-image">
             <div class="header--with-image__content">
               <h2>Add New Role</h2>
@@ -21,19 +54,19 @@
             </div>
           </div>
           <div class="panel--content">
-            <div class="col-12 col-lg-8">
+            <div class="col-12">
               <label class="form__label"><strong>Role</strong></label>
               <div class="input-container">
                 <input type="text" placeholder="">
               </div>
             </div>
-            <div class="col-12 col-lg-8">
+            <div class="col-12">
               <label class="form__label"><strong>Role Summary</strong></label>
               <div class="input-container">
                 <input type="text" placeholder="">
               </div>
             </div>
-            <div class="col-12 col-lg-12">
+            <div class="col-12">
               <button class="button--normal">Add New Role</button>
             </div>
           </div>

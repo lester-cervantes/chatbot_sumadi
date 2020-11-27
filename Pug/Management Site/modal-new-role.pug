@@ -1,22 +1,22 @@
 extend includes/layout-normal.pug
 block main-content
-	.container--sumadi-modal
+	.container--sumadi-modal.react-modal
 		.sumadi-modal
-			a: i.fas.fa-times-circle
+			a.modal__button-close: i.fas.fa-times-circle
 			.header--with-image
 				.header--with-image__content
 					h2 Add New Role
 					p In order to add a new role to the platform please fill the following information.
 			.panel--content
-				.col-12.col-lg-8
+				.col-12
 					label.form__label
 						strong Role
 					.input-container
 						input(type="text" placeholder="")
-				.col-12.col-lg-8
+				.col-12
 					label.form__label
 						strong Role Summary
 					.input-container
 						input(type="text" placeholder="")
-				.col-12.col-lg-12
+				.col-12
 					button.button--normal Add New Role
