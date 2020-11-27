@@ -51,6 +51,10 @@ select {
 	background-repeat: no-repeat;
 	background-position: calc(100% - .5em) 50%;
 	background-size: 12px;
+
+	&[multiple] {
+		min-height: 80px;
+	}
 }
 
 select::-ms-expand {
@@ -105,6 +109,7 @@ input[type=checkbox]:checked + label:before {
 .input-container {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	margin-bottom: 16px;
 	position: relative;
 
@@ -166,6 +171,10 @@ input[type=checkbox]:checked + label:before {
 	.element--width-auto {
 		width: auto;
 	}
+
+	.input-message {
+		flex: 1 0 100%;
+	}
 }
 
 
@@ -188,6 +197,27 @@ input[type=checkbox]:checked + label:before {
 	text-transform: uppercase;
 	color: $grey-light-1;
 	@include font-size(12px);
+}
+
+.input-message {
+	text-transform: uppercase;
+	color: $grey-light-1;
+	@include font-size(12px);
+	margin-top: -$spacer-xss;
+	margin-bottom: $spacer-xss;
+	margin-left: $spacer-xss;
+	
+	&.input-message--success {
+		color: $green-dark;
+	}
+	
+	&.input-message--warning {
+		color: $yellow-dark;
+	}
+	
+	&.input-message--error {
+		color: $red-normal;
+	}
 }
 
 .input--search {
@@ -331,4 +361,8 @@ input.slider {
 		background: $blue-dark;
 		cursor: pointer;
 	}
+}
+
+.rich-text__editor {
+	min-height: 120px;
 }

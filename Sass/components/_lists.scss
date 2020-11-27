@@ -150,21 +150,38 @@ ul.list {
 	justify-content: center;
 	align-items: center;
 	a {
-	  height: 30px;
-	  width: 30px;
-	  line-height: 30px;
-	  text-align: center;
-	  border-radius: 50%;
-	  &:hover {
-		background-color: $purple-light;
-		cursor: pointer;
-		color: white;
-	  }
-	  &.active {
-		background-color: $green-normal;
-		cursor: pointer;
-		color: white;
-	  }
+		height: 30px;
+		width: 30px;
+		line-height: 30px;
+		text-align: center;
+		border-radius: 50%;
+		margin-right: $spacer-xss;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	  
+		&:hover,
+		&.active {
+			background-color: $purple-light;
+			cursor: pointer;
+			color: white;
+		}
+		&.active {
+			background-color: $green-normal;
+		}
+
+		&.disabled {
+			background-color: $grey-light-2;
+			color: $grey-light-1;
+			cursor: not-allowed;
+
+			&:hover, &:focus, &:active {
+				background-color: $grey-light-2;
+				color: $grey-light-1;
+			}
+		}
+
 	}
 	img {
 		height: 30px;

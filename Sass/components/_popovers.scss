@@ -1,0 +1,107 @@
+.popover {
+	background: $grey-light-2;
+	width: 100%;
+	height: 0px;
+	margin: 0px;
+	margin-top: 16px;
+	padding: 0;
+	border-radius: 4px;
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+	transform: scaleY(0);
+	top: 100%;
+	z-index: 1;
+	@include box-shadow;
+	@include transition;
+
+	&.show {
+		opacity: 1;
+		visibility: visible;
+		height: auto;
+		padding: $spacer-s;
+		transform: scaleY(1);
+	}
+
+	&:after {
+		bottom: 100%;
+		left: 32px;
+		border: solid transparent;
+		content: "";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+		border-color: rgba($grey-light-2, 0);
+		border-bottom-color: $grey-light-2;
+		border-width: 12px;
+		margin-left: -16px;
+	}
+
+	&.popover--arrow-right {
+		&:after {
+			bottom: 100%;
+			left: unset;
+			right: 32px;
+			border: solid transparent;
+			content: "";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+			border-color: rgba($grey-light-2, 0);
+			border-bottom-color: $grey-light-2;
+			border-width: 12px;
+			margin-left: -16px;
+		}
+    }
+    
+    .popover-title {
+        font-size: $text-m;
+    }
+}
+
+.popover--internal {
+	background: $grey-light-2;
+	width: 100%;
+	height: 0px;
+	margin: 0px;
+	margin-top: 16px;
+	padding: 0px;
+	border-radius: 4px;
+	position: relative;
+	opacity: 0;
+	visibility: hidden;
+	transform: scaleY(0);
+	flex: 1;
+	@include transition;
+
+	&.show {
+		opacity: 1;
+		visibility: visible;
+		height: 100%;
+		padding: 16px 0px;
+		transform: scaleY(1);
+	}
+
+	&:after {
+		bottom: 100%;
+		left: 32px;
+		border: solid transparent;
+		content: "";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+		border-color: rgba($grey-light-2, 0);
+		border-bottom-color: $grey-light-2;
+		border-width: 12px;
+		margin-left: -16px;
+    }
+    
+    .popover-title {
+        font-size: $text-m;
+        border-bottom: 1px solid rgba($grey-light-1, 1);
+        margin-top: $spacer-xs;
+    }
+}
