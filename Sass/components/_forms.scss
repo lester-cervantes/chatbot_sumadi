@@ -275,15 +275,57 @@ input[type=text] {
 }
 
 .flex-row {
+	flex-wrap: wrap;
 	strong {
 		display: flex;
+		flex: 1 1 auto;
 	}
 	.input--fake {
-		width: auto;
+		margin: 0;
+		margin-left: $spacer-xs;
 		min-width: 20px;
+		flex: 1 1 auto;
+		width: auto;
+	}
+	.slider {
+		flex: 1 0 100%;
 	}
 }
 
 input.slider {
 	box-shadow: none;
+	-webkit-appearance: none;
+	width: 100%;
+	height: 8px;
+	border-radius: 5px;
+	background: $purple-normal;
+	outline: none;
+	opacity: 0.7;
+	-webkit-transition: .2s;
+	transition: opacity .2s;
+	padding: 0;
+
+	.slider:hover {
+		opacity: 1;
+	}
+	  
+	.slider::-webkit-slider-thumb {
+		-webkit-appearance: none;
+		appearance: none;
+		width: 24px;
+		height: 24px;
+		border-radius: 50%;
+		border: 4px solid $white;
+		background: $blue-dark;
+		cursor: pointer;
+	}
+	  
+	.slider::-moz-range-thumb {
+		width: 24px;
+		height: 24px;
+		border-radius: 50%;
+		border: 4px solid $white;
+		background: $blue-dark;
+		cursor: pointer;
+	}
 }
