@@ -34,3 +34,64 @@ mixin list(options)
 					strong Member since
 					span May 15, 2020
 				.list__link View activity
+
+mixin list--2-columns(options)
+	- options = options || {};
+	- var cardImage = options.cardImage || 'school.svg';
+	- var cardImageURL = 'images/' + cardImage;
+	- var cardTitle = options.cardTitle || 'Universidad de Especialidades Espiritu Santo';
+	- var cardSubtitle = options.cardSubtitle || 'Institution';
+	- var cardLabel = options.cardLabel || 'Production';
+	- var cardButton = options.cardButton || 'See more';
+
+	.subtitle.subtitle--xtra-small Activity
+	.title.title--xtra-small Latest Users
+	ul.list.list--2-columns
+		li.list__item
+			img(src="images/users/user01.png").list__img
+			.list__text
+				.list__title Clyde Dixon
+				.list__subtitle
+					strong Member since
+					span May 15, 2020
+				.list__link View activity
+		li.list__item
+			img(src="images/users/user02.png").list__img
+			.list__text
+				.list__title Bettie Holmes
+				.list__subtitle
+					strong Member since
+					span May 15, 2020
+				.list__link View activity
+		li.list__item
+			img(src="images/users/user03.png").list__img
+			.list__text
+				.list__title Clayton Pittman
+				.list__subtitle
+					strong Member since
+					span May 15, 2020
+				.list__link View activity
+		li.list__item
+			img(src="images/users/user01.png").list__img
+			.list__text
+				.list__title Clyde Dixon
+				.list__subtitle
+					strong Member since
+					span May 15, 2020
+				.list__link View activity
+		li.list__item
+			img(src="images/users/user02.png").list__img
+			.list__text
+				.list__title Bettie Holmes
+				.list__subtitle
+					strong Member since
+					span May 15, 2020
+				.list__link View activity
+		li.list__item
+			img(src="images/users/user03.png").list__img
+			.list__text
+				.list__title Clayton Pittman
+				.list__subtitle
+					strong Member since
+					span May 15, 2020
+				.list__link View activity

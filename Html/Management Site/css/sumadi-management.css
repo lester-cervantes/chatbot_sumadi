@@ -4055,6 +4055,9 @@ body.login-body {
   body.login-body footer a {
     color: #FFFFFF; }
 
+.full-height {
+  height: 100%; }
+
 /* Buttons Global
 ***********************/
 .button--normal {
@@ -4262,6 +4265,17 @@ input[type=checkbox] + label:before {
   font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
   font-weight: 600;
   cursor: pointer; }
+
+.button--transparent {
+  background: transparent;
+  color: #8A84D6;
+  border: none;
+  padding: 8px 16px;
+  -webkit-transition: all 0.25s cubic-bezier(0.65, 0.05, 0.36, 1);
+  -o-transition: all 0.25s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition: all 0.25s cubic-bezier(0.65, 0.05, 0.36, 1); }
+  .button--transparent:hover {
+    background: rgba(255, 255, 255, 0.4); }
 
 /* Labels
 **********************/
@@ -4909,8 +4923,7 @@ label.label.label--xs {
   width: 100%;
   min-width: 90%;
   padding: 24px;
-  height: 100%;
-  overflow: hidden; }
+  height: 100%; }
   @media only screen and (min-width: 992px) {
     .section--boxed {
       -webkit-box-orient: vertical;
@@ -5006,7 +5019,7 @@ label.label.label--xs {
   height: 0px;
   margin: 0px;
   margin-top: 16px;
-  padding: 0px;
+  padding: 0;
   border-radius: 4px;
   position: absolute;
   opacity: 0;
@@ -5023,8 +5036,8 @@ label.label.label--xs {
   .popover.show {
     opacity: 1;
     visibility: visible;
-    height: 100%;
-    padding: 16px 0px;
+    height: auto;
+    padding: 16px;
     -webkit-transform: scaleY(1);
     -ms-transform: scaleY(1);
     transform: scaleY(1); }
@@ -5245,7 +5258,12 @@ input[type=checkbox]:checked + label:before {
     min-width: 100px;
     width: auto;
     padding-right: 24px;
-    width: 100%; }
+    width: 100%;
+    background: #FFFFFF; }
+    .input-container .input--fake.disabled,
+    .input-container select.disabled {
+      background: rgba(255, 255, 255, 0.7);
+      color: rgba(40, 52, 87, 0.6); }
   .input-container input {
     width: 100%; }
   .input-container .input--with-elements {
@@ -5636,6 +5654,27 @@ ul.list {
         width: 100%;
         cursor: pointer;
         text-decoration: underline; }
+  ul.list.list--2-columns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    ul.list.list--2-columns li.list__item {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+      flex: 1 1 100%;
+      width: 100%; }
+      @media only screen and (min-width: 992px) {
+        ul.list.list--2-columns li.list__item {
+          -webkit-box-flex: 1;
+          -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+          width: 50%; } }
 
 .list--institution {
   border: 1px solid #e7e6f7;

@@ -163,3 +163,15 @@ input[type=checkbox] + label:before {
 	font-weight: 600;
 	cursor: pointer;
 }
+
+.button--transparent {
+	background: transparent;
+	color: $purple-normal;
+	border: none;
+	padding: $spacer-xs $spacer-s;
+	@include transition;
+
+	&:hover {
+		background: rgba($white, 0.4);
+	}
+}

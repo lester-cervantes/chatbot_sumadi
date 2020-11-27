@@ -76,30 +76,30 @@ input[type=checkbox] + label:before {
 	background-color: $white;
 	margin-right: $spacer-s;
 	padding-left: 2px;
-  width: $spacer-m;
+	width: $spacer-m;
 	height: $spacer-m;
 	border-radius: $spacer-xss;
 	border: 1px solid $grey-light-1;
 }
 
 input[type=checkbox]:checked + label:before {
-  color: $grey-dark-2;
+	color: $grey-dark-2;
 }
 
 
 .form__label {
 	@include font-size($text-xs);
-  font-weight: 700;
-  line-height: 1;
-  text-transform: uppercase;
-  margin-top: $spacer-xs;
-  display: flex;
-  color: $grey-light-1;
+	font-weight: 700;
+	line-height: 1;
+	text-transform: uppercase;
+	margin-top: $spacer-xs;
+	display: flex;
+	color: $grey-light-1;
 
-  strong {
-  	color: $black;
-  	margin-right: $spacer-xss;
-  }
+	strong {
+		color: $black;
+		margin-right: $spacer-xss;
+	}
 }
 
 .input-container {
@@ -114,7 +114,13 @@ input[type=checkbox]:checked + label:before {
 		min-width: 100px;
 		width: auto;
 		padding-right: $spacer-m;
-    	width: 100%;
+		width: 100%;
+		background: $white;
+
+		&.disabled {
+			background: rgba($white, 0.7);
+			color: rgba($blue-dark, 0.6);
+		}
 	}
 	input {
 		width: 100%;

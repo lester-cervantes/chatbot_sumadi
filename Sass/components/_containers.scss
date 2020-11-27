@@ -106,7 +106,6 @@
 	min-width: 90%;
 	padding: $spacer-m;
 	height: 100%;
-	overflow: hidden;
 
 	@include media(desktop-s) {
 		flex-direction: column;
@@ -208,7 +207,7 @@
 	height: 0px;
 	margin: 0px;
 	margin-top: 16px;
-	padding: 0px;
+	padding: 0;
 	border-radius: 4px;
 	position: absolute;
 	opacity: 0;
@@ -221,8 +220,8 @@
 	&.show {
 		opacity: 1;
 		visibility: visible;
-		height: 100%;
-		padding: 16px 0px;
+		height: auto;
+		padding: $spacer-s;
 		transform: scaleY(1);
 	}
 
