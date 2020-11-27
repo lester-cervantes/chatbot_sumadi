@@ -281,12 +281,14 @@ input[type=text] {
 		flex: 0 1 auto;
 		line-height: 40px;
 	}
-	.input--fake {
+	.input--fake,
+	.input {
 		margin: 0;
 		margin-left: $spacer-xs;
 		min-width: 20px;
 		flex: 0 1 auto;
 		width: auto;
+		max-width: 64px;
 	}
 	.slider {
 		flex: 1 0 100%;

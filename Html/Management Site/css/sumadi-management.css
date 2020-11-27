@@ -5454,14 +5454,16 @@ input[type=text]::placeholder {
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
     line-height: 40px; }
-  .flex-row .input--fake {
+  .flex-row .input--fake,
+  .flex-row .input {
     margin: 0;
     margin-left: 8px;
     min-width: 20px;
     -webkit-box-flex: 0;
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
-    width: auto; }
+    width: auto;
+    max-width: 64px; }
   .flex-row .slider {
     -webkit-box-flex: 1;
     -ms-flex: 1 0 100%;
