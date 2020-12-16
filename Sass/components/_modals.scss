@@ -12,16 +12,16 @@
 
 .sumadi-modal {
 	box-sizing: border-box;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 650px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 650px;
 	min-height: 400px;
-  transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 	padding: $spacer-xl;
 	font-family: $font-core;
-  background-color: $white;
-  border-radius: $spacer-xs;
+	background-color: $white;
+	border-radius: $spacer-xs;
 	background-color: $white;
 	@include box-shadow;
 	@include font-size($text-l);
@@ -79,9 +79,20 @@
 }
 
 .sumadi-modal .header--with-image img {
-	width: auto;
-	max-width: 100px;
-	height: auto;
+	width: 120px;
+    max-width: 120px;
+    min-width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+	object-position: center;
+	cursor: pointer;
+}
+
+.sumadi-modal .header--with-image .input--uploader {
+	opacity: 0;
+	height: 0;
+	width: 0;
 }
 
 .sumadi-modal .header--with-image .header--with-image__content h2{
