@@ -4433,6 +4433,7 @@ label.label.label--xs {
   top: 50%;
   width: 650px;
   min-height: 400px;
+  max-height: 100vh;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -4448,6 +4449,10 @@ label.label.label--xs {
   font-size: 1.125rem; }
   .sumadi-modal p {
     margin-bottom: 20px; }
+  .sumadi-modal .panel--content {
+    max-height: calc(100vh - 350px);
+    overflow: hidden;
+    overflow-y: auto; }
 
 .sumadi-modal--hero-image img {
   display: block;
@@ -4553,6 +4558,26 @@ label.label.label--xs {
   position: fixed;
   top: 0;
   left: 0; }
+
+.thumbnail.header--with-image img {
+  width: auto;
+  max-width: 100px;
+  height: auto;
+  width: 120px;
+  max-width: 120px;
+  min-width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  cursor: pointer; }
+
+.thumbnail.header--with-image .input--uploader {
+  opacity: 0;
+  height: 0;
+  width: 0; }
 
 /* Alerts
 **********************/
@@ -5467,6 +5492,10 @@ input.slider {
   width: 100%;
   height: 40px;
   color: #222D38;
+  border-radius: 4px;
+  -webkit-box-shadow: 2px 2px 4px 0 rgba(34, 45, 56, 0.1);
+  box-shadow: 2px 2px 4px 0 rgba(34, 45, 56, 0.1);
+  border: 1px solid rgba(34, 45, 56, 0.1);
   margin-bottom: 16px; }
   .custom-select-container * {
     font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
@@ -5476,15 +5505,15 @@ input.slider {
     width: 100%; }
     .custom-select-container .custom-select__control .custom-select__value-container .custom-select__single-value {
       width: 100%; }
-      .custom-select-container .custom-select__control .custom-select__value-container .custom-select__single-value .custom-select__input input {
-        font-size: 14px;
-        font-weight: 600;
-        margin: 0;
-        max-height: 24px;
-        color: #222D38 !important;
-        width: 100% !important;
-        -webkit-box-shadow: none;
-        box-shadow: none; }
+    .custom-select-container .custom-select__control .custom-select__value-container .custom-select__input input {
+      font-size: 14px;
+      font-weight: 600;
+      margin: 0;
+      max-height: 24px;
+      color: #222D38 !important;
+      width: 100% !important;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
   .custom-select-container .custom-select__menu .custom-select__menu-list .custom-select__option {
     -webkit-transition: all 0.25s cubic-bezier(0.65, 0.05, 0.36, 1);
     -o-transition: all 0.25s cubic-bezier(0.65, 0.05, 0.36, 1);

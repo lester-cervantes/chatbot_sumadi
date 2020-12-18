@@ -17,6 +17,7 @@
 	top: 50%;
 	width: 650px;
 	min-height: 400px;
+	max-height: 100vh;
 	transform: translate(-50%, -50%);
 	padding: $spacer-xl;
 	font-family: $font-core;
@@ -27,6 +28,12 @@
 	@include font-size($text-l);
 	p {
 		margin-bottom: 20px;
+	}
+
+	.panel--content {
+		max-height: calc(100vh - 350px);
+		overflow: hidden;
+		overflow-y: auto;
 	}
 }
 
@@ -111,4 +118,24 @@
 	position: fixed;
 	top: 0;
 	left: 0;
+}
+
+.thumbnail.header--with-image img {
+	width: auto;
+	max-width: 100px;
+	height: auto;
+	width: 120px;
+    max-width: 120px;
+    min-width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+	object-position: center;
+	cursor: pointer;
+}
+
+.thumbnail.header--with-image .input--uploader {
+	opacity: 0;
+	height: 0;
+	width: 0;
 }
