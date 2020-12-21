@@ -1,5 +1,37 @@
 extend includes/layout-normal.pug
 block main-content
+    .sidebar__overlay
+    .sidebar--filters
+        .sidebar__title
+            .sidebar--container
+                p Filters
+            .sidebar--container.sidebar--container-right
+                i.fas.fa-times-circle
+        .sidebar__filter-container
+            .sidebar__filter-section
+                .sidebar__filter-section-title
+                    p By Report
+                .sidebar__filter-checkbox-container
+                    .sidebar__filter-checkbox
+                        i.fas.fa-network-wired
+                        p EXAMS BY INSTITUTION
+                    .sidebar__filter-checkbox
+                        i.fas.fa-network-wired
+                        p STUDENTS TAKING AN EXAM
+            .sidebar__filter-section
+                .sidebar__filter-section-title
+                    p By Region
+                .sidebar__filter-checkbox-container
+                    .sidebar__filter-checkbox
+                    .sidebar__filter-checkbox
+                    .sidebar__filter-checkbox
+                    .sidebar__filter-checkbox
+            .sidebar__filter-section
+                .sidebar__filter-section-title
+                    p By Status
+                .sidebar__filter-checkbox-container
+                    .sidebar__filter-checkbox
+                    .sidebar__filter-checkbox
     .container
         .row
             .col-12.section--boxed
