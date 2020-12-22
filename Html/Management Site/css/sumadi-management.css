@@ -6466,10 +6466,10 @@ ul.list {
     background-color: #283457; }
 
 .sidebar--filters {
-  position: absolute;
+  position: fixed;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 20px 60px 0px 60px;
+  padding: 20px 60px;
   top: 0px;
   right: 0px;
   z-index: 1000;
