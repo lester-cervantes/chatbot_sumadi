@@ -12,32 +12,67 @@ block main-content
                 .sidebar__filter-section-title
                     p By Report
                 .sidebar__filter-checkbox-container
-                    .sidebar__filter-checkbox
-                        i.fas.fa-network-wired
-                        p EXAMS BY INSTITUTION
-                    .sidebar__filter-checkbox
-                        i.fas.fa-network-wired
-                        p STUDENTS TAKING AN EXAM
-            .sidebar__filter-section
+                    .switch.switch--square
+                        input(type="checkbox" checked="checked")
+                        span.slider
+                            .switch__text.switch__text--on
+                                i.fas.fa-network-wired.switch__icon
+                                span EXAMS BY INSTITUTION
+                            .switch__text.switch__text--off
+                                i.fas.fa-network-wired.switch__icon
+                                span EXAMS BY INSTITUTION
+                    .switch.switch--square
+                        input(type="checkbox" checked="checked")
+                        span.slider
+                            .switch__text.switch__text--on
+                                i.fas.fa-network-wired.switch__icon
+                                span STUDENTS TAKING AN EXAM
+                            .switch__text.switch__text--off
+                                i.fas.fa-network-wired.switch__icon
+                                span STUDENTS TAKING AN EXAM
                 .sidebar__filter-section-title
                     p By Region
                 .sidebar__filter-checkbox-container
-                    .sidebar__filter-checkbox
-                        i.fas.fa-globe
-                        p REGION 1
-                    .sidebar__filter-checkbox
-                        i.fas.fa-globe
-                        p REGION 2
-            .sidebar__filter-section
+                    .switch.switch--square
+                        input(type="checkbox" checked="checked")
+                        span.slider
+                            .switch__text.switch__text--on
+                                i.fas.fa-fa-globe.switch__icon
+                                span Region 1
+                            .switch__text.switch__text--off
+                                i.fas.fa-fa-globe.switch__icon
+                                span Region 1
+                    .switch.switch--square
+                        input(type="checkbox" checked="checked")
+                        span.slider
+                            .switch__text.switch__text--on
+                                i.fas.fa-fa-globe.switch__icon
+                                span Region 2
+                            .switch__text.switch__text--off
+                                i.fas.fa-fa-globe.switch__icon
+                                span Region 2
                 .sidebar__filter-section-title
                     p By Status
                 .sidebar__filter-checkbox-container
-                    .sidebar__filter-checkbox
-                        i.fas.fa-poll-h
-                        p ACTIVE
-                    .sidebar__filter-checkbox
-                        i.fas.fa-poll-h
-                        p INACTIVE                    
+                    .switch.switch--square
+                        input(type="checkbox" checked="checked")
+                        span.slider
+                            .switch__text.switch__text--on
+                                i.fas.fa-fa-poll-h.switch__icon
+                                span Active
+                            .switch__text.switch__text--off
+                                i.fas.fa-fa-poll-h.switch__icon
+                                span Active
+                    .switch.switch--square
+                        input(type="checkbox" checked="checked")
+                        span.slider
+                            .switch__text.switch__text--on
+                                i.fas.fa-fa-poll-h.switch__icon
+                                span Inactive
+                            .switch__text.switch__text--off
+                                i.fas.fa-fa-poll-h.switch__icon
+                                span Inactive
+                  
     .container
         .row
             .col-12.section--boxed
