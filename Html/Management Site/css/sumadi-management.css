@@ -4145,6 +4145,7 @@ body.login-body {
   border-radius: 50em;
   text-align: center;
   padding-top: 8px;
+  border: none;
   cursor: pointer; }
   .button--circle:hover {
     opacity: 0.8; }
