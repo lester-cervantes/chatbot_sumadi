@@ -6521,7 +6521,15 @@ ul.list {
   height: 100vh;
   background-color: #FFFFFF;
   overflow: hidden;
-  overflow-y: auto; }
+  overflow-y: auto;
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.25s cubic-bezier(0.65, 0.05, 0.36, 1);
+  -o-transition: all 0.25s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition: all 0.25s cubic-bezier(0.65, 0.05, 0.36, 1); }
   @media only screen and (min-width: 768px) {
     .sidebar--filters {
       width: 550px; } }
@@ -6618,7 +6626,23 @@ ul.list {
   height: 100vh;
   width: 100%;
   z-index: 999;
-  background-color: rgba(34, 45, 56, 0.9); }
+  opacity: 0;
+  background-color: rgba(34, 45, 56, 0.9);
+  visibility: hidden;
+  -webkit-transition: all 0.25s cubic-bezier(0.65, 0.05, 0.36, 1);
+  -o-transition: all 0.25s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition: all 0.25s cubic-bezier(0.65, 0.05, 0.36, 1); }
+
+.sidebar-container.show .sidebar__overlay {
+  visibility: visible;
+  opacity: 1; }
+
+.sidebar-container.show .sidebar--filters {
+  visibility: visible;
+  -webkit-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  transform: translateX(0%);
+  opacity: 1; }
 
 /*  Tabs
 **********************/

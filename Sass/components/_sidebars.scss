@@ -53,6 +53,7 @@
 	}
 }
 
+
 .sidebar--filters {
 	position: fixed;
 	box-sizing: border-box;
@@ -66,6 +67,10 @@
 	background-color: $white;
 	overflow: hidden;
 	overflow-y: auto;
+	transform: translateX(100%);
+	opacity: 0;
+	visibility: hidden;
+	@include transition;
 
 	@include media(tablet) {
 		width: 550px;
@@ -148,5 +153,23 @@
 	height: 100vh;
 	width: 100%;
 	z-index: 999;
+	opacity: 0;
 	background-color: rgba($black,.9);
+	visibility: hidden;
+	@include transition;
+}
+
+
+.sidebar-container {
+	&.show {
+		.sidebar__overlay {
+			visibility: visible;
+			opacity: 1;
+		}
+		.sidebar--filters {
+			visibility: visible;
+			transform: translateX(0%);
+			opacity: 1;
+		}	
+	}
 }
