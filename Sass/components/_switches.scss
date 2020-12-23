@@ -118,7 +118,7 @@
   
     .switch__text {
       @include font-size($text-s);
-      line-height: 1;
+      line-height: 1.15;
       font-weight: 600;
       text-transform: uppercase;
       color: $white;

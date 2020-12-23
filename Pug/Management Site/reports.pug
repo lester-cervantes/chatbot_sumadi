@@ -1,79 +1,7 @@
 extend includes/layout-normal.pug
 block main-content
-    .sidebar-container
-        .sidebar__overlay
-        .sidebar--filters
-            .sidebar__title
-                .sidebar--container
-                    h3 Filters
-                .sidebar--container.sidebar--container-right
-                    i.fas.fa-times-circle
-            .sidebar__filter-container
-                .sidebar__filter-section
-                    .sidebar__filter-section-title
-                        h4 By Report
-                    .sidebar__filter-checkbox-container
-                        .switch.switch--square
-                            input(type="checkbox" checked="checked")
-                            span.slider
-                                .switch__text.switch__text--on
-                                    i.fas.fa-network-wired.switch__icon
-                                    span EXAMS BY INSTITUTION
-                                .switch__text.switch__text--off
-                                    i.fas.fa-network-wired.switch__icon
-                                    span EXAMS BY INSTITUTION
-                        .switch.switch--square
-                            input(type="checkbox" checked="checked")
-                            span.slider
-                                .switch__text.switch__text--on
-                                    i.fas.fa-network-wired.switch__icon
-                                    span STUDENTS TAKING AN EXAM
-                                .switch__text.switch__text--off
-                                    i.fas.fa-network-wired.switch__icon
-                                    span STUDENTS TAKING AN EXAM
-                    .sidebar__filter-section-title
-                        h4 By Region
-                    .sidebar__filter-checkbox-container
-                        .switch.switch--square
-                            input(type="checkbox" checked="checked")
-                            span.slider
-                                .switch__text.switch__text--on
-                                    i.fas.fa-globe.switch__icon
-                                    span Region 1
-                                .switch__text.switch__text--off
-                                    i.fas.fa-globe.switch__icon
-                                    span Region 1
-                        .switch.switch--square
-                            input(type="checkbox" checked="checked")
-                            span.slider
-                                .switch__text.switch__text--on
-                                    i.fas.fa-globe.switch__icon
-                                    span Region 2
-                                .switch__text.switch__text--off
-                                    i.fas.fa-globe.switch__icon
-                                    span Region 2
-                    .sidebar__filter-section-title
-                        h4 By Status
-                    .sidebar__filter-checkbox-container
-                        .switch.switch--square
-                            input(type="checkbox" checked="checked")
-                            span.slider
-                                .switch__text.switch__text--on
-                                    i.fas.fa-poll-h.switch__icon
-                                    span Active
-                                .switch__text.switch__text--off
-                                    i.fas.fa-poll-h.switch__icon
-                                    span Active
-                        .switch.switch--square
-                            input(type="checkbox" checked="checked")
-                            span.slider
-                                .switch__text.switch__text--on
-                                    i.fas.fa-poll-h.switch__icon
-                                    span Inactive
-                                .switch__text.switch__text--off
-                                    i.fas.fa-poll-h.switch__icon
-                                    span Inactive
-                    
+
+
     .container
         .row
             .col-12.section--boxed
@@ -114,19 +42,19 @@ block main-content
                         .divider
                 .row
                     .col-12.col-sm-10
-                        .title-container
-                            span Filtering by
-                            .filter-text 
-                                span.filter-text Category
+                        .filter-title-container
+                            span.title Filtering by
+                            .filter-text-container 
+                                span.filter-text Category:
                                 span.filter-value Category Name
-                            .filter-text 
-                                span.filter-text Region
+                            .filter-text-container
+                                span.filter-text Region:
                                 span.filter-value Region Name
-                            .filter-text 
-                                span.filter-text Status
+                            .filter-text-container
+                                span.filter-text Status:
                                 span.filter-value Status Name 
                     .col-12.col-sm-2
-                        .button--circle.button--filter
+                        button.button--circle.button--filter
                             i.fas.fa-filter
                 .row 
                     .col-12
@@ -188,3 +116,6 @@ block main-content
                                 a 5
                                 a
                                     i.fas.fa-chevron-right
+
+
+    +sidebar--filters()

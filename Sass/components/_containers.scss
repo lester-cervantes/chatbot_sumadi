@@ -208,3 +208,41 @@
 	justify-content: space-between;
 	align-items: center;
 }
+
+
+.filter-title-container {
+	color: $black;
+	font-weight: 400;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	span.title {
+		display: block;
+		width: 100%;
+		margin-bottom: $spacer-xs;
+		font-size: $text-l;
+	}
+	.filter-text-container {
+		margin-right: $spacer-m;
+		padding-right: $spacer-m;
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		border-right: 1px solid rgba($black, 0.25);
+		font-size: $text-s;
+
+		&:last-child {
+			margin-right: $spacer-m;
+			border: none;
+		}
+		span.filter-text {
+			display: inline-block;
+			margin-right: $spacer-xs;
+			text-transform: uppercase;
+		}
+		span.filter-value {
+			display: inline-block;
+			font-weight: 800;
+		}
+	}
+}

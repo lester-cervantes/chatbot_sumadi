@@ -1,0 +1,74 @@
+mixin sidebar--filters()    
+    .sidebar-container
+        .sidebar__overlay
+        .sidebar--filters
+            .sidebar__title
+                .sidebar__title-text
+                    h3 Filters
+                button.button--transparent.button--close-sidebar
+                    i.fas.fa-times-circle
+            .sidebar__filter-container
+                .sidebar__filter-section
+                    .sidebar__filter-section-title
+                        h4 By Report
+                    .sidebar__filter-checkbox-container
+                        .switch.switch--square
+                            input(type="checkbox" checked="checked")
+                            span.slider
+                                .switch__text.switch__text--on
+                                    i.fas.fa-network-wired.switch__icon
+                                    span EXAMS BY INSTITUTION
+                                .switch__text.switch__text--off
+                                    i.fas.fa-network-wired.switch__icon
+                                    span EXAMS BY INSTITUTION
+                        .switch.switch--square
+                            input(type="checkbox" checked="checked")
+                            span.slider
+                                .switch__text.switch__text--on
+                                    i.fas.fa-network-wired.switch__icon
+                                    span STUDENTS TAKING AN EXAM
+                                .switch__text.switch__text--off
+                                    i.fas.fa-network-wired.switch__icon
+                                    span STUDENTS TAKING AN EXAM
+                    .sidebar__filter-section-title
+                        h4 By Region
+                    .sidebar__filter-checkbox-container
+                        .switch.switch--square
+                            input(type="checkbox" checked="checked")
+                            span.slider
+                                .switch__text.switch__text--on
+                                    i.fas.fa-globe.switch__icon
+                                    span Region 1
+                                .switch__text.switch__text--off
+                                    i.fas.fa-globe.switch__icon
+                                    span Region 1
+                        .switch.switch--square
+                            input(type="checkbox" checked="checked")
+                            span.slider
+                                .switch__text.switch__text--on
+                                    i.fas.fa-globe.switch__icon
+                                    span Region 2
+                                .switch__text.switch__text--off
+                                    i.fas.fa-globe.switch__icon
+                                    span Region 2
+                    .sidebar__filter-section-title
+                        h4 By Status
+                    .sidebar__filter-checkbox-container
+                        .switch.switch--square
+                            input(type="checkbox" checked="checked")
+                            span.slider
+                                .switch__text.switch__text--on
+                                    i.fas.fa-poll-h.switch__icon
+                                    span Active
+                                .switch__text.switch__text--off
+                                    i.fas.fa-poll-h.switch__icon
+                                    span Active
+                        .switch.switch--square
+                            input(type="checkbox" checked="checked")
+                            span.slider
+                                .switch__text.switch__text--on
+                                    i.fas.fa-poll-h.switch__icon
+                                    span Inactive
+                                .switch__text.switch__text--off
+                                    i.fas.fa-poll-h.switch__icon
+                                    span Inactive
