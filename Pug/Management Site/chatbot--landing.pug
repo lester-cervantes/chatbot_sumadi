@@ -1,0 +1,14 @@
+extend includes/layout-chatbot.pug
+block main-content
+    .chatbot
+        .chatbot__header
+            img(src="images/robot_avatar.png" class="chatbot__header-image")
+            .chatbot__title SUMADI Chatbot
+            .chatbot__close-top
+                i.fas.fa-times
+        .chatbot__chat-container
+            .chatbot__chat-subcontainer.chatbot__chat-subcontainer--loading
+                img(src="images/robot_avatar.png" class="")
+                +loader()
+        .chatbot__close
+            i.fas.fa-times

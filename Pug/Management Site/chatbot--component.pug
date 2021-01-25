@@ -1,0 +1,45 @@
+extend includes/layout-normal.pug
+block main-content
+    .chatbot
+        .chatbot__header
+            img(src="images/robot_avatar.png" class="chatbot__header-image")
+            .chatbot__title SUMADI Chatbot
+            .chatbot__close-top
+                i.fas.fa-times
+        .chatbot__chat-container
+            .chatbot__chat-subcontainer
+                .message.message--received
+                    img(src="images/robot_avatar.png" class="message__sent-icon")
+                    .message__chatbox.message__chatbox--received
+                        .message__title {CHATBOT.NAME}
+                        .message__body Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ma
+                .message--divider
+                .message.message--sent
+                    .message__chatbox.message__chatbox--sent
+                        .message__body ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ma
+                .message.message--sent
+                    .message__chatbox.message__chatbox--sent Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ma
+                .message__confirmation ✓ 10:21 am
+                .message--divider
+                .message.message--received
+                    img(src="images/robot_avatar.png" class="message__sent-icon")
+                    .message__chatbox.message__chatbox--received
+                        .message__title {CHATBOT.NAME}
+                        .message__body Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ma
+                .message.message--received
+                    img(src="images/robot_avatar.png" class="message__sent-icon")
+                    .message__chatbox.message__chatbox--received
+                        .message__body Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ma
+                .message.message--received
+                    img(src="images/robot_avatar.png" class="message__sent-icon")
+                    .message__chatbox.message__chatbox--received
+                        .message__body Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ma                                        
+                        .message__footer {CHATBOT.NAME}
+            .chatbot__bottom
+                .chatbot__type
+                    .chatbot__type-icon
+                        .fas.fa-align-justify
+                    input(class="chatbot__input" placeholder="Type your message...")
+                    .chatbot__send SEND
+                .chatbot__close
+                    i.fas.fa-times

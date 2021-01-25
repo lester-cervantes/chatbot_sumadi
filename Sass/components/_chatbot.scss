@@ -1,0 +1,315 @@
+.chatbot {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    padding:0;
+    box-sizing: border-box;
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+    font-family: $font-core;
+}
+
+.chatbot__header {
+    display: flex;
+    align-items: center;
+    padding: 0px $spacer-s;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    background-color:$black;
+    font-weight: 600;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+.chatbot__header-image {
+    height: 30px;
+    width: 30px;
+}
+
+.chatbot__title {
+    color: $white;
+    font-size: $text-xs;
+    margin-left: 15px;
+}
+
+.chatbot__close-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    margin-left: auto;
+    background-color: $white;
+    border-radius: 50%;
+    color: $grey-dark-1;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.chatbot__chat-container {
+    height: calc(80% - 50px);
+    border-radius: 0px 0px 10px 10px;
+    font-family: $font-secondary;
+    height: 570px;
+    background: $gradient;
+}
+
+.chatbot__chat-subcontainer {
+    display: flex;
+    overflow-y: auto;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    padding: $spacer-m;
+    background: rgba(255,255,255, 0.6);
+    background:rgba(255,255,255, 0.6),
+    linear-gradient(90deg, rgba(0,221,214,1) 0%, rgba(121,121,246,1) 100%);
+}
+
+.chatbot__chat-subcontainer--loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    img {
+        width: 60%;
+    }
+    .loader-container {
+        height:  100px;
+    }
+}
+
+.message {
+    display: flex;
+    width: 100%;
+    padding: 0px $spacer-xs;
+    align-items: flex-end;
+    font-family: $font-secondary;
+}
+
+
+.message__title {
+    display: block;
+    font-size: $text-xs;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.message__footer {
+    display: block;
+    font-size: $text-xs;
+    font-weight: 600;
+    margin-top: 7px;
+    margin-left: auto;
+}
+
+.message__confirmation {
+    display: inline-block;
+    width: auto;
+    margin-left: auto;
+    padding-right: $spacer-m;
+    font-size: $text-xxs;
+    font-weight: 600;
+}
+
+.message--divider {
+    min-height: $spacer-s;
+}
+
+.message--received {
+    justify-content: flex-start;
+}
+
+.message--sent {
+    justify-content: flex-end;
+}
+
+.message--review {
+    color: $purple-normal;
+}
+
+.message__sent-icon {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: $white;
+}
+
+.message--option {
+    width: calc(100% - 54px);
+    padding: 5px 10px;
+    background-color: $black;
+    margin: 5px 8px;
+    margin-left: auto;
+    color: $white;
+    font-size: $text-xs;
+    border-radius: 5px;
+    font-weight: 600;
+    &:hover {
+        cursor: pointer;
+        background-color: $green-normal;
+    }
+}
+
+
+.message__chatbox {
+    width: calc(100% - 30px);
+    padding: $spacer-s $spacer-m;
+    margin: 5px 0px 0px 10px;
+    border-radius: 20px;
+    font-size: $text-xs;
+    position: relative;
+}
+
+.message__chatbox--sent {
+    background-color: $purple-normal;
+    border-radius: 20px 20px 0px 20px;
+    margin: 5px 0px 0px 0px;
+    color: $white;
+    &:after {
+        clip-path: polygon(0 67%, 0% 100%, 100% 100%);
+        content: "";
+        height:50px;
+        width:25px;
+        background-color: $purple-normal;
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        right: -10px;
+
+    }
+}
+
+.message__chatbox--received {
+    background-color: $white;
+    border-radius: 20px 20px 20px 0px;
+    &:after {
+        clip-path: polygon(100% 67%, 0% 100%, 100% 100%);
+        content: "";
+        height: 50px;
+        width:25px;
+        background-color:$white;
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        left: -10px;
+    }
+}
+
+.chatbot__review {
+    font-size: $text-xxl;
+    display: flex;
+    max-width: 250px;
+    justify-content: space-around;
+    i{
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.chatbot__bottom {
+    width: 100%;
+    position: relative;
+}
+
+.chatbot__type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px $spacer-xs;
+    width: 100%;
+    min-height: 70px;
+    border: 1px solid $grey-light-2;
+    background-color: $white;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.chatbot__input {
+    height: 100%;
+    width: calc(100% - 110px);
+    margin: auto;
+    &::placeholder {
+        color: $grey-light-1;
+        font-weight: 600;
+    }
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.chatbot__type-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: $text-xs;
+    height: 30px;
+    width: 30px;
+    background-color: $blue-normal;
+    border-radius: 50%;
+    color: $white;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.chatbot__send {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    width: 60px;
+    height: 30px;
+    background-color: $purple-normal;
+    margin-left: auto;
+    color: $white;
+    font-size: $text-xs;
+    font-weight: 600;
+    font-family: $font-secondary;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.chatbot__close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    height: 60px;
+    width:  60px;
+    border-radius: 50%;
+    font-size: 30px;
+    background-color: $purple-normal;
+    margin-left: auto;
+    color: $white;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.textarea {
+    display: block;
+    width: 70%;
+    overflow: hidden;
+    resize: both;
+    height: 100%;
+    min-height: 20px;
+    max-height: 60px;
+    line-height: 20px;
+    color: $grey-light-1;
+    font-weight: 600;
+    font-size: $text-s;
+    margin: auto;
+    outline: none;
+    resize: none;
+    overflow-y: auto;
+  }
+
+  .textarea[contenteditable]:empty::before {
+    content: "Type your message...";
+    color: $grey-light-1;
+  }
